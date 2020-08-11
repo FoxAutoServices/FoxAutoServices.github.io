@@ -302,3 +302,24 @@ nav{
     border-radius: 100%;
     border: 3px solid #eb648c;
 }
+
+
+/* Adventure styles */
+
+.adventure-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.adventure-grid p{
+    color: rgba(0, 0, 0, .7);
+}
+
+footer{
+    padding: 2rem 0;
+    background-color: #d7d4ed;
+    text-align: center;
+    color: rgba(0, 0, 0, .7);
+}
