@@ -168,3 +168,82 @@ nav{
 .btn:hover{
     background-color: #cc3f69;
 }
+
+/* Experience styles */
+.experience-outdoors{
+    padding: 0;
+}
+
+.title-heading{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+    color: rgba(0, 0, 0, .7);
+}
+
+.title-heading h3{
+    font-size: 1.4rem;
+}
+
+.title-heading h1{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem;
+    margin: .5rem 0 1rem;
+}
+
+.title-heading p{
+    text-transform: lowercase;
+}
+
+.activities-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2.5rem;
+}
+
+.activities-grid-item{
+    height: 40rem;
+    padding: 5rem;
+    color: #fafafa;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* cursor: pointer; */
+    z-index: 1;
+}
+
+.activities-grid-item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, rgba(49, 24, 131, .9) 0%, rgba(72, 56, 149, 0.8) 100%);
+    z-index: -1;
+}
+
+.star-gazing{
+    background: url("images/stars.jpg") center no-repeat;
+}
+
+.hiking{
+    background: url("images/hiking.jpg") center no-repeat;
+}
+
+.camping{
+    background: url("images/camping.jpg") center no-repeat;
+}
+
+.activities-grid-item i{
+    font-size: 4rem;
+    color: #eb648c;
+}
+
+.activities-grid-item h1{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
