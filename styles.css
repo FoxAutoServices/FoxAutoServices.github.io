@@ -48,7 +48,7 @@ header{
 
 .container{
     width: 100%;
-    max-width: 98rem;
+    max-width: 108rem;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -273,7 +273,7 @@ nav{
     width: 100%;
     color: #fafafa;
     position: absolute;
-    top: 55%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
