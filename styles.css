@@ -187,9 +187,9 @@ nav{
     background-color: transparent;
 }
 
-/* Experience styles */
+/* Services styles */
 .experience-outdoors{
-    padding: 0;
+    padding: 5rem 0;
 }
 
 .title-heading{
@@ -255,13 +255,13 @@ nav{
 }
 
 .activities-grid-item i{
-    font-size: 4rem;
+    font-size: 4.6rem;
     color: #FC6701;
 }
 
 .activities-grid-item h1{
     font-family: 'Aldrich', sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     text-transform: uppercase;
     margin: 2rem 0;
 }
@@ -418,7 +418,7 @@ footer {
 
 @media screen and (min-width: 350px){
     .main-message{
-        transform: translateY(40%);
+        transform: translateY(20%);
     }
 }
 
@@ -427,6 +427,10 @@ footer {
         height: 9.4rem;
         background: url("images/wave-medium.png");
         background-size: cover;
+    }
+
+    .main-message{
+        transform: translateY(25%);
     }
 
     .testimonials::before{
@@ -503,11 +507,15 @@ footer {
     }
 
     .main-message{
-        transform: translateY(40%);
+        transform: translateY(35%);
+    }
+
+    .title-heading h3{
+        font-size: 2.9rem;
     }
 
     .title-heading h1{
-        font-size: 2.5rem;
+        font-size: 4rem;
     }
 
     .testimonial{
@@ -520,6 +528,10 @@ footer {
         height: 22.7rem;
         background: url("images/wave-large.png");
         background-size: cover;
+    }
+
+    .main-message{
+        max-width: 70rem;
     }
 
     .testimonials::before{
@@ -535,7 +547,6 @@ footer {
     }
     
     .main-message{
-        max-width: 70rem;
         transform: translateY(40%);
     }
 }
