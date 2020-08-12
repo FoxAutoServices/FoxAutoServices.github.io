@@ -1,5 +1,14 @@
 /* Global styles */
 
+/* Color palette 
+- main color: #172A54 rgb(34, 62, 122)
+- secondary color: #2D4561 rgb(35, 57, 82)
+- accent color: #FC6701 rgb(252, 103, 1)
+- Light accent color: #FFBB04 rgb(255, 187, 4)
+- text clor: #FAFAFA
+
+*/
+
 *,
 *::before,
 *::after{
@@ -73,13 +82,13 @@ nav{
 }
 
 .close i{
-    color: #eb648c;
+    color: #FC6701;
 }
 
 .nav-list{
     width: 25rem;
     height: 100vh;
-    background-color: #d7d4ed;
+    background-color: #d4d7ed;
     position: fixed;
     top: 0;
     right: -26rem;
@@ -116,7 +125,7 @@ nav{
 .hero{
     width: 100%;
     height: 80vh;
-    background: linear-gradient(135deg, rgba(49, 24, 131, .9) 0%, rgba(72, 56, 149, 0.8) 100%), url("images/header-bg.jpg") center no-repeat;
+    background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%), url("images/header-bg.jpg") center no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -155,18 +164,18 @@ nav{
 }
 
 .btn{
-    background-color: #eb648c;
+    background-color: #FC6701;
     border-radius: 2rem;
     color: #fafafa;
     display: inline-block;
     margin-top: 2rem;
-    padding: 1rem 2.5rem;
+    padding: 1.4rem 2.5rem;
     text-transform: uppercase;
-    transition: background-color 650ms;
+    transition: background-color 450ms;
 }
 
 .btn:hover{
-    background-color: #cc3f69;
+    background-color: #ec8c0d;
 }
 
 /* Experience styles */
@@ -220,7 +229,7 @@ nav{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(135deg, rgba(49, 24, 131, .9) 0%, rgba(72, 56, 149, 0.8) 100%);
+    background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%);
     z-index: -1;
 }
 
@@ -238,7 +247,7 @@ nav{
 
 .activities-grid-item i{
     font-size: 4rem;
-    color: #eb648c;
+    color: #FC6701;
 }
 
 .activities-grid-item h1{
@@ -253,7 +262,7 @@ nav{
 .testimonials{
     width: 100%;
     height: 80vh;
-    background: linear-gradient(135deg, rgba(49, 24, 131, .9) 0%, rgba(72, 56, 149, 0.8) 100%), url("images/testimonials-bg.jpg") center no-repeat fixed;
+    background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%), url("images/testimonials-bg.jpg") center no-repeat fixed;
     background-size: cover;
     position: relative;
 }
@@ -273,7 +282,7 @@ nav{
     width: 100%;
     color: #fafafa;
     position: absolute;
-    top: 65%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -291,7 +300,7 @@ nav{
     left: 50%;
     transform: translateX(-50%);
     font-size: 8rem;
-    color: #eb648c;
+    color: #FC6701;
     opacity: .5;
     z-index: -1;
 }
@@ -300,7 +309,7 @@ nav{
     width: 10rem;
     height: 10rem;
     border-radius: 100%;
-    border: 3px solid #eb648c;
+    border: 3px solid #FC6701;
 }
 
 
@@ -387,7 +396,7 @@ footer{
         position: absolute;
         left: 0;
         bottom: -.5rem;
-        background-color: #eb648c;
+        background-color: #FC6701;
         width: 100%;
         height: 2px;
         transform: scaleX(0);
@@ -413,6 +422,10 @@ footer{
 
     .title-heading h1{
         font-size: 2.5rem;
+    }
+
+    .testimonial{
+        top: 65%;
     }
 }
 
