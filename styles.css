@@ -21,6 +21,7 @@ html{
     font-family: 'Nunito', sans-serif;
     font-size: 10px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -326,11 +327,83 @@ nav{
     color: rgba(0, 0, 0, .7);
 }
 
-footer{
-    padding: 2rem 0;
-    background-color: #d7d4ed;
+/* Footer Styles */
+footer {
+    padding: 4.9rem 0;
+    background-color: rgba(23, 42, 84, .9);
+    color: white;
     text-align: center;
-    color: rgba(0, 0, 0, .7);
+    position: relative;
+}
+
+.back-to-top{
+    width: 7rem;
+    height: 7rem;
+    background-color: #ec8c0d;
+    position: absolute;
+    top: -3.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.back-to-top i {
+    display: block;
+    color: white;
+    padding: 2.3rem;
+    font-size: 2.2rem;
+    animation: up 1.5s infinite;
+}
+
+.footer-content {
+    overflow: hidden;
+}
+
+.footer-content h4{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+}
+
+.asterisk{
+    font-size: 1.2rem;
+    color: #ec8c0d;
+    margin: 0 1.6rem;
+}
+
+.footer-content .asterisk{
+    margin: 2.4rem 0;
+}
+
+.footer-content-about{
+    margin-bottom: 5.4rem;
+    color: #fafafa;
+}
+
+.footer-content-about p{
+    line-height: 2;
+}
+
+.social-icons{
+    list-style: none;
+    margin-bottom: 5.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i{
+    font-size: 2.4rem;
+    color: white;
+    padding: .8rem 2rem;
+    opacity: .7;
+    transition: color .5s;
+}
+
+.social-icons i:hover,
+.social-icons i:focus{
+    color: #ec8c0d;
 }
 
 /* Media queries */
