@@ -1,15 +1,3 @@
-$(function () {
-    'use strict';
-    //preloader
-    $(" .loading-overlay .loader").fadeOut(2000, function () {
-        $("body").css("overflow", "auto");
-        $(this).parent().fadeOut(500,
-            function () {
-                $(this).remove();
-            });
-    });
-})
-
 // Funcion expression to select elements
 const selectElement = (s) => document.querySelector(s);
 

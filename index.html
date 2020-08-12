@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
     <!--Font awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--Our own stylesheet-->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -21,7 +24,7 @@
 <body>
 
     <!---------------   start preload ------------>
-    <div class="loading-overlay text-center">
+    <!-- <div class="loading-overlay text-center">
         <div class="loader">
             <div class="loader-div">
                 <div class="loader-div">
@@ -34,7 +37,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!---------------   end preload ------------>
 
     <header>
@@ -169,6 +172,81 @@
                 <a class="btn" href="#">Book your adventure</a>
             </div>
         </section>
+
+        <!-- Pricing section -->
+        <section class="price">
+            <div class="container">
+                <div class="title-heading">
+                    <h3>Special</h3>
+                    <h1>Pricing</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="price-table">
+                            <div class="price-head">
+                                <h4>STANDARD</h4>
+                                <h2><span>$25</span> &#47; month</h2>
+                            </div>
+                            <div class="price-content">
+                                <ul>
+                                    <li>100GB Monthly Bandwidth</li>
+                                    <li>100 Google AdWords</li>
+                                    <li>100 Domain Hosting</li>
+                                    <li>SSL Shopping Cart</li>
+                                    <li>24/7 Live Support</li>
+                                </ul>
+                            </div>
+                            <div class="price-btn">
+                                <button class="btn btn-primary">Purchase Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="price-table">
+                            <div class="price-head">
+                                <h4>PROFESSIONAL</h4>
+                                <h2><span>$125</span> &#47; month</h2>
+                            </div>
+                            <div class="price-content">
+                                <ul>
+                                    <li>100GB Monthly Bandwidth</li>
+                                    <li>100 Google AdWords</li>
+                                    <li>100 Domain Hosting</li>
+                                    <li>SSL Shopping Cart</li>
+                                    <li>24/7 Live Support</li>
+                                </ul>
+                            </div>
+                            <div class="price-btn">
+                                <button class="btn btn-primary">Purchase Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="price-table">
+                            <div class="price-head">
+                                <h4>BUSINESS</h4>
+                                <h2><span>$255</span> &#47; month</h2>
+                            </div>
+                            <div class="price-content">
+                                <ul>
+                                    <li>100GB Monthly Bandwidth</li>
+                                    <li>100 Google AdWords</li>
+                                    <li>100 Domain Hosting</li>
+                                    <li>SSL Shopping Cart</li>
+                                    <li>24/7 Live Support</li>
+                                </ul>
+                            </div>
+                            <div class="price-btn">
+                                <button class="btn btn-primary">Purchase Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -207,9 +285,13 @@
     </footer>
     <!-- End of Footer -->
 
-    <script type="text/javascript" src="scripts.js"></script>
+    <!-- Jquery -->
     <script src="js/jquey-3.4.1.js"></script>
-    <script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript">
         $(window).on("load", function () {
             $(" .loading-overlay .loader").fadeOut(1000, function () {
                 $("body").css("overflow", "auto");
