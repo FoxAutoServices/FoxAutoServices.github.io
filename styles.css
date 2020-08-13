@@ -79,11 +79,6 @@ border-radius: 50%;
 border-top:8px solid #FC6701;
 animation: rotate 5s linear infinite;
 }
-@keyframes rotate{
-100%{
-    transform: rotate(360deg);
-}
-}
 /**********  End preload ***********/
 
 /* Header styles */
@@ -652,6 +647,10 @@ footer {
     .price .price-table{  
         margin: 1.5rem 0.5rem;
     }
+
+    .price .row div:nth-child(2){
+        transform: translateY(-4%);
+    }
 }
 
 @media screen and (min-width: 950px){
@@ -679,5 +678,37 @@ footer {
     
     .main-message{
         transform: translateY(40%);
+    }
+}
+
+@keyframes up{
+    0%{
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+}
+
+@keyframes fadeUp{
+    0%{
+        transform: translateY(4rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
     }
 }
