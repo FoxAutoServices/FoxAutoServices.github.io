@@ -344,7 +344,7 @@ nav{
 
 .testimonial-text-box i{
     position: absolute;
-    top: -8rem;
+    top: -12rem;
     left: 50%;
     transform: translateX(-50%);
     font-size: 8rem;
@@ -390,8 +390,8 @@ nav{
     box-shadow: 0 0 12px rgba(0,0,0,.2);
     border-radius: 20px;
     color:#333;
-    min-height: 40rem;
-    margin-top: 10px;
+    min-height: 42rem;
+    margin: 1.5rem 1rem;
     transition: all 350ms ease-in;
 }
 
@@ -410,13 +410,21 @@ nav{
 .price .price-table .price-head h4{
     font-family: 'Aldrich', sans-serif;
     letter-spacing: 1.4px;
+    text-transform: uppercase;
     font-weight: 600;
     font-size: 2.2rem;  
+}
+
+.price .price-table .price-head h2{
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    font-size: 2rem;  
 }
 
 .price .price-table .price-content ul{
     position: relative;
     padding: 1rem 3rem;
+    margin: 1rem auto;
 }
 
 .price .price-table .price-content ul li{
@@ -639,6 +647,10 @@ footer {
 
     .testimonial{
         top: 65%;
+    }
+
+    .price .price-table{  
+        margin: 1.5rem 0.5rem;
     }
 }
 
