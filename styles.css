@@ -95,7 +95,7 @@ header{
 
 .container{
     width: 100%;
-    max-width: 108rem;
+    max-width: 112rem;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -228,23 +228,24 @@ nav{
 
 .title-heading{
     text-align: center;
-    text-transform: uppercase;
     margin-bottom: 10rem;
     color: rgba(0, 0, 0, .7);
 }
 
 .title-heading h3{
-    font-size: 1.9rem;
+    font-size: 2.6rem;
+    text-transform: uppercase;
 }
 
 .title-heading h1{
     font-family: 'Aldrich', sans-serif;
-    font-size: 3rem;
+    text-transform: uppercase;
+    font-size: 3.6rem;
     margin: .5rem 0 1rem;
 }
 
 .title-heading p{
-    text-transform: lowercase;
+    font-size: 1.9rem;
 }
 
 .activities-grid{
@@ -460,6 +461,73 @@ nav{
 
 /************ End price *********/
 
+/* Follow us Styles */
+.follow-work {
+    position: relative;
+    background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%), url("images/rangerover.jpg") center no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.between{
+    display: flex;
+    align-items: center;
+}
+
+.follow-work .container{
+    padding: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 35vh;
+}
+
+.follow-work .container .title-heading{
+    color: #fafafa;
+    margin-bottom: 0;
+}
+
+.social-contact{
+    margin: 6rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social-contact-icon{
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0.8;
+    transition: all 650ms;
+}
+
+.social-contact-icon:hover{
+    opacity: 1;
+    scale: 1.2;
+}
+
+.social-contact-icon .icon-name{
+    padding-top: 15px;
+    font-size: 3.2rem;
+    letter-spacing: 1.4px;
+    text-align: center;
+    color: #fafafa;
+    text-transform: uppercase;
+}
+
+.social-contact img{
+    height: 80px;
+    width: 80px;
+    transition: 0.2s;
+}
+/* End of Social Styles */
+
 /* Footer Styles */
 footer {
     padding: 4.9rem 0;
@@ -653,6 +721,24 @@ footer {
 
     .price .row div:nth-child(2){
         transform: translateY(-4%);
+    }
+
+    .follow-work .container{
+        padding: auto -10;
+        flex-direction: row;
+    }
+
+    .follow-work .container .title-heading{
+        margin: auto 0;
+    }
+    
+    .social-contact{
+        flex-direction: row;
+    }
+
+    .social-contact .social-contact-icon .icon-name{
+        font-size: 2.6rem;
+        font-weight: 600;
     }
 }
 
