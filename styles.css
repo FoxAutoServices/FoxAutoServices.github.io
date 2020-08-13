@@ -733,7 +733,7 @@ footer {
     }
 
     .follow-work .container{
-        padding: auto -10;
+        padding: auto 0;
         flex-direction: row;
     }
 
@@ -741,10 +741,6 @@ footer {
         margin: auto 0;
     }
     
-    .social-contact{
-        flex-direction: row;
-    }
-
     .social-contact-icon{
         opacity: 0.8;
     }
@@ -779,6 +775,14 @@ footer {
 
     .follow-work{
         min-height: 75vh;
+    }
+
+    .follow-work .container{
+        transform: translateY(-15%);
+    }
+
+    .social-contact{
+        flex-direction: row;
     }
 
     .follow-work::before{
