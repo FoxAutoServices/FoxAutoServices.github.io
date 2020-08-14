@@ -728,10 +728,6 @@ footer {
         margin: 1.5rem 0.5rem;
     }
 
-    .price .row div:nth-child(2){
-        transform: translateY(-4%);
-    }
-
     .follow-work .container{
         padding: auto 0;
         flex-direction: row;
@@ -778,6 +774,10 @@ footer {
         background-size: cover;
     }
 
+    .price .row div:nth-child(2){
+        transform: translateY(-4%);
+    }
+
     .follow-work{
         min-height: 75vh;
     }
@@ -803,7 +803,16 @@ footer {
     }
     
     .main-message{
-        transform: translateY(40%);
+        max-width: 100%;
+        transform: translateY(45%);
+    }
+
+    .main-message h1{
+        font-size: 8.4rem;
+    }
+
+    .main-message p{
+        max-width: 65rem;
     }
 }
 
