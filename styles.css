@@ -221,6 +221,55 @@ nav{
     background-color: transparent;
 }
 
+/* How we do it */
+.how-we-do-it{
+    margin-top: -2rem;
+    padding-top: 2.5rem;
+}
+
+.how-we-do-it-grid{
+    display: relative;
+    margin-top: -2rem;
+}
+
+.how-we-do-it-text{
+    float: left;
+    width: 100%;
+}
+
+.info-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1.5rem auto;
+}
+
+.how-we-do-it-text .number-image{
+    position: relative;
+    height: 3.2rem;
+    width: 3.2rem;
+    margin: 1.8rem;
+}
+
+.how-we-do-it-text img{
+    height: 100%;
+    width: 100%;
+}
+
+.how-we-do-it-grid p{
+    color: rgba(0, 0, 0, .7);
+}
+
+.how-we-do-it-image{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.how-we-do-it .btn{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
 /* Services styles */
 .experience-outdoors{
     padding: 2rem 0;
@@ -766,6 +815,17 @@ footer {
 
     .main-message{
         max-width: 70rem;
+    }
+
+    .how-we-do-it-text{
+        width: 53%;
+    }
+
+    .how-we-do-it-image{
+        float: right;
+        margin-top: -6rem;
+        margin-bottom: 4rem;
+        width: 43%;
     }
 
     .testimonials::before{
