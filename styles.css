@@ -22,6 +22,7 @@ html{
     font-size: 10px;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a{
@@ -63,8 +64,8 @@ section{
 }
 
 .loader{
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top:50%;
     left: 50%;
@@ -76,12 +77,13 @@ section{
 .loader-div{
     width: 100%;
     height: 100%;
-    border: 8px solid linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%);
-    border-radius: 50%;
-    border-top:8px solid #FC6701;
-    animation: rotate 5s linear infinite;
+    background: url('images/fas-logo.png') center no-repeat;
+    -webkit-animation: scaleAndFade 2.3s infinite; 
+       -moz-animation: scaleAndFade 2.3s infinite; 
+        -ms-animation: scaleAndFade 2.3s infinite; 
+         -o-animation: scaleAndFade 2.3s infinite; 
+            animation: scaleAndFade 2.3s infinite;
 }
-/**********  End preload ***********/
 
 /* Header styles */
 header{
@@ -930,9 +932,45 @@ footer {
     }
 }
 
-
 @keyframes rotate{
     100%{
         transform: rotate(360deg);
     }
+}
+
+
+
+@keyframes scaleAndFade {
+    from { 
+        scale: .5;
+        opacity: 1;
+     }
+    to   { 
+        scale: 1.8;
+        opacity: 0;
+     }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes scaleAndFade {
+    from { scale: .5; }
+    to   { scale: 1.8; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes scaleAndFade {
+    from { scale: .5; }
+    to   { scale: 1.8; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes scaleAndFade {
+    from { scale: .5; }
+    to   { scale: 1.8; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes scaleAndFade {
+    from { scale: .5; }
+    to   { scale: 1.8; }
 }

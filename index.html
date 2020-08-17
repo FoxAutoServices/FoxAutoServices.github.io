@@ -27,27 +27,19 @@
 <body>
 
     <!-- Start preload -->
-    <!-- <div class="loading-overlay text-center">
+    <div class="loading-overlay text-center">
         <div class="loader">
             <div class="loader-div">
-                <div class="loader-div">
-                    <div class="loader-div">
-                        <div class="loader-div">
-                            <div class="loader-div">
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <header>
         <div class="container">
             <nav>
                 <div class="nav-brand">
                     <a href="index.html">
-                        <img src="images/logo.png" alt="Business name">
+                        <img src="images/fas-logo.png" alt="Business name">
                     </a>
                 </div>
 
@@ -99,13 +91,13 @@
         <!-- Begin Adventure section -->
         <section class="how-we-do-it">
             <div class="container">
-                <div class="title-heading">
+                <div class="title-heading animate-top">
                     <h1>how We do it</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                 </div>
                 <div class="how-we-do-it-grid">
                     <!-- Adventure grid item #1 -->
-                    <div class="how-we-do-it-text">
+                    <div class="how-we-do-it-text animate-left">
                         <div class="info-item">
                             <img src="images/one.png" alt="First Step" class="number-image">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex architecto eveniet
@@ -126,11 +118,11 @@
                         </div>
                     </div>
                     <!-- Adventure grid item #2 -->
-                    <div class="how-we-do-it-image">
+                    <div class="how-we-do-it-image animate-right">
                         <img src="images/car.png" alt="">
                     </div>
                 </div>
-                <a class="btn" href="#">Read more</a>
+                <a class="btn animate-bottom" href="#">Read more</a>
             </div>
         </section>
 
@@ -145,7 +137,7 @@
 
                 <div class="activities-grid">
                     <!-- Grid item #1 -->
-                    <div class="activities-grid-item star-gazing">
+                    <div class="activities-grid-item star-gazing animate-left">
                         <i class="icon ion-md-settings"></i>
                         <h1>Mechanical Service</h1>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptatibus, debitis
@@ -153,7 +145,7 @@
                             recusandae, veniam odit hic nihil.</p>
                     </div>
                     <!-- Grid item #2 -->
-                    <div class="activities-grid-item hiking">
+                    <div class="activities-grid-item hiking animate-bottom">
                         <i class="icon ion-md-brush"></i>
                         <h1>Detailing Service</h1>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptatibus, debitis
@@ -161,7 +153,7 @@
                             recusandae, veniam odit hic nihil.</p>
                     </div>
                     <!-- Grid item #3 -->
-                    <div class="activities-grid-item camping">
+                    <div class="activities-grid-item camping animate-right">
                         <i class="icon ion-md-hand"></i>
                         <h1>Paintless Dent Repair</h1>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptatibus, debitis
@@ -419,13 +411,15 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Glide -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.js"></script>
+    <!-- Scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- My Scripts -->
     <script type="text/javascript" src="scripts.js"></script>
     <script type="text/javascript">
         $(window).on("load", function () {
-            $(" .loading-overlay .loader").fadeOut(1000, function () {
+            $(" .loading-overlay .loader").fadeOut(850, function () {
                 $("body").css("overflow", "auto");
-                $(this).parent().fadeOut("slow",
+                $(this).parent().fadeOut(450,
                     function () {
                         $(this).remove();
                     });
