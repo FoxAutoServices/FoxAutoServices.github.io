@@ -474,12 +474,12 @@ nav{
 .price .price-table .price-content ul{
     position: relative;
     padding: 1rem 3rem;
-    margin: 1rem auto;
+    margin: 1.5rem auto;
 }
 
 .price .price-table .price-content ul li{
     list-style: none;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 35px;
     font-weight: 600;
     color:rgba(0, 0, 0, .7);
@@ -487,29 +487,11 @@ nav{
     cursor: pointer;
 }
 
-.price .price-table .price-btn button{
-    position: absolute;
-    left: 40%;
-    bottom: 2.5rem;
-    background-color: #FC6701;
-    border-radius: 1.2rem;
-    font-weight: 600;
-    font-size: 1.3rem;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-    border: solid 3px #FC6701;
-    color: #fafafa;
-    transform: translateX(-35%);
-    margin: 1rem 0;
-    padding: 1rem 2rem;
-    transition: all 650ms;
+.price .container .btn{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -100%);
 }
-
-.price .price-table .price-btn button:hover{
-    color: #FC6701;
-    background-color: transparent;
-}
-
 
 .glide__arrows{
     position: relative;
@@ -520,7 +502,7 @@ nav{
 }
 
 .glide__arrows .glide__arrow{
-    background: linear-gradient(135deg, rgba(34, 62, 122, 1) 0%, rgba(35, 57, 82, 1) 100%);;
+    background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%);;
     border: none;
     width: 35px;
     height: 35px;
