@@ -162,6 +162,7 @@ nav{
 
 .hero{
     width: 100%;
+    min-height: 65rem;
     height: 80vh;
     background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%), url("images/mustang.jpg") center no-repeat;
     background-size: cover;
@@ -357,6 +358,7 @@ nav{
 
 .testimonials{
     width: 100%;
+    min-height: 60rem;
     height: 80vh;
     background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%), url("images/testimonials-bg.jpg") center no-repeat fixed;
     background-size: cover;
