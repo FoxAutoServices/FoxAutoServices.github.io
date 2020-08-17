@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
     <!--Font awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -190,13 +192,13 @@
         <section class="price">
             <div class="container">
                 <div class="title-heading">
-                    <h3>Special</h3>
-                    <h1>Pricing</h1>
+                    <h3>Dealer</h3>
+                    <h1>Prices</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="prices-slider">
+                    <div class="item">
                         <div class="price-table">
                             <div class="price-head">
                                 <h4>Basic Detail</h4>
@@ -209,15 +211,12 @@
                                     <li>24/7 Live Support</li>
                                 </ul>
                             </div>
-                            <div class="price-btn">
-                                <button class="btn btn-primary">Make appointment</button>
-                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item">
                         <div class="price-table">
                             <div class="price-head">
-                                <h4>Professional Detail</h4>
+                                <h4>Pro Detail</h4>
                                 <h2>$125*</h2>
                             </div>
                             <div class="price-content">
@@ -228,12 +227,9 @@
                                     <li>24/7 Live Support</li>
                                 </ul>
                             </div>
-                            <div class="price-btn">
-                                <button class="btn btn-primary">Make appointment</button>
-                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="item">
                         <div class="price-table">
                             <div class="price-head">
                                 <h4>Full Detail</h4>
@@ -246,12 +242,55 @@
                                     <li>24/7 Live Support</li>
                                 </ul>
                             </div>
-                            <div class="price-btn">
-                                <button class="btn btn-primary">Make appointment</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="price-table">
+                            <div class="price-head">
+                                <h4>Advanced Detail</h4>
+                                <h2>$255*</h2>
+                            </div>
+                            <div class="price-content">
+                                <ul>
+                                    <li>100GB Monthly Bandwidth</li>
+                                    <li>100 Google AdWords</li>
+                                    <li>24/7 Live Support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="price-table">
+                            <div class="price-head">
+                                <h4>Full Detail</h4>
+                                <h2>$255*</h2>
+                            </div>
+                            <div class="price-content">
+                                <ul>
+                                    <li>100GB Monthly Bandwidth</li>
+                                    <li>100 Google AdWords</li>
+                                    <li>24/7 Live Support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="price-table">
+                            <div class="price-head">
+                                <h4>Full Detail</h4>
+                                <h2>$255*</h2>
+                            </div>
+                            <div class="price-content">
+                                <ul>
+                                    <li>100GB Monthly Bandwidth</li>
+                                    <li>100 Google AdWords</li>
+                                    <li>24/7 Live Support</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+                <a class="btn" href="#">Make an appointment</a>
             </div>
         </section>
 
@@ -310,6 +349,7 @@
                 <a class="btn" href="#">Book your adventure</a>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
@@ -353,6 +393,7 @@
     <!-- Bootstrap -->
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
     <script type="text/javascript">
         $(window).on("load", function () {
@@ -363,6 +404,35 @@
                         $(this).remove();
                     });
             });
+        });
+    </script>
+    <script>
+        $('.prices-slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+            responsive: [
+                {
+                    breakpoint: 770,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 550,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                }
+            ]
         });
     </script>
 </body>

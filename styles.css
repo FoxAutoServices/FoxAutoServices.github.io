@@ -257,6 +257,21 @@ nav{
     width: 100%;
 }
 
+.how-we-do-it-text .info-item{
+    border-radius: 12px;
+    padding: 1.4rem;
+    background-color: white;
+    transition: all 500ms ease-in-out;
+}
+
+.how-we-do-it-text .info-item:hover{
+    background-color: rgba(23, 42, 84, .9);
+}
+
+.how-we-do-it-text .info-item:hover p{ 
+    color: #fafafa;
+}
+
 .how-we-do-it-grid p{
     color: rgba(0, 0, 0, .7);
 }
@@ -307,18 +322,20 @@ nav{
 .activities-grid-item{
     height: 40rem;
     padding: 5rem;
+    border-radius: 12px;
     color: #fafafa;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* cursor: pointer; */
+    cursor: pointer;
     z-index: 1;
 }
 
 .activities-grid-item::before{
     content: "";
     position: absolute;
+    border-radius: 12px;
     top: 0;
     left: 0;
     width: 100%;
@@ -436,9 +453,10 @@ nav{
 .price .price-table{
     overflow: hidden;
     background-color: #FFF;
+    max-width: 37rem;
     box-sizing: border-box;
     box-shadow: 0 0 12px rgba(0,0,0,.2);
-    border-radius: 20px;
+    border-radius: 12px;
     color:#333;
     min-height: 42rem;
     margin: 1.5rem 1rem;
@@ -446,7 +464,7 @@ nav{
 }
 
 .price .price-table:hover{
-    box-shadow: 0 0 24px rgba(0,0,0,.4);
+    box-shadow: 3px 3px 12px rgba(0,0,0,.4);
 }
 
 .price .price-table .price-head{
@@ -479,7 +497,7 @@ nav{
 
 .price .price-table .price-content ul li{
     list-style: none;
-    font-size: 1.4rem;
+    font-size: 1.55rem;
     line-height: 35px;
     font-weight: 600;
     color:rgba(0, 0, 0, .7);
@@ -487,27 +505,10 @@ nav{
     cursor: pointer;
 }
 
-.price .price-table .price-btn button{
-    position: absolute;
-    left: 40%;
-    bottom: 2.5rem;
-    background-color: #FC6701;
-    border-radius: 1.2rem;
-    font-weight: 600;
-    font-size: 1.3rem;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-    border: solid 3px #FC6701;
-    color: #fafafa;
-    transform: translateX(-35%);
-    margin: 1rem 0;
-    padding: 1rem 2rem;
-    transition: all 650ms;
-}
-
-.price .price-table .price-btn button:hover{
-    color: #FC6701;
-    background-color: transparent;
+.price .btn{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Follow us Styles */
