@@ -489,16 +489,33 @@ nav{
     cursor: pointer;
 }
 
-.price .container .btn{
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, -100%);
+.price .price-table .price-btn button{
+    position: absolute;
+    left: 40%;
+    bottom: 2.5rem;
+    background-color: #FC6701;
+    border-radius: 1.2rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    border: solid 3px #FC6701;
+    color: #fafafa;
+    transform: translateX(-35%);
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    transition: all 650ms;
+}
+
+.price .price-table .price-btn button:hover{
+    color: #FC6701;
+    background-color: transparent;
 }
 
 .glide__arrows{
     position: relative;
     display: flex;
-    margin: 20px auto;
+    margin: 1rem auto;
     flex-direction: row;
     justify-content: initial;
 }
