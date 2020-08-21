@@ -710,7 +710,8 @@ nav{
 .contact{
     position: relative;
     min-height: 100vh;
-    padding: 5rem 1rem;
+    padding: 6rem 1rem;
+    padding-bottom: 11rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -720,8 +721,11 @@ nav{
 }
 
 .contact .content{
-    max-width: 800px;
     text-align: center;
+}
+
+.contact .content .title-heading{
+    margin-bottom: 3.5rem;
 }
 
 .contact .content h2{
@@ -735,7 +739,7 @@ nav{
     color: white;
 }
 
-.contact .container{
+.contact .inner-container{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -744,20 +748,20 @@ nav{
     margin-top: 3rem;
 }
 
-.contact .container .contactInfo{
+.contact .inner-container .contactInfo{
     width: 100%;
     margin-bottom: 4rem;
     display: flex;
     flex-direction: column;
 }
 
-.contact .container .contactInfo .box{
+.contact .inner-container .contactInfo .box{
     position: relative;
     padding: 20px 0;
     display: flex;
 }
 
-.contact .container .contactInfo .box .icon{
+.contact .inner-container .contactInfo .box .icon{
     min-width: 6rem;
     height: 6rem;
     background: white;
@@ -768,7 +772,7 @@ nav{
     font-size: 2.2rem;
 }
 
-.contact .container .contactInfo .box .text{
+.contact .inner-container .contactInfo .box .text{
     display: flex;
     margin-left: 2rem;
     font-size: 1.6rem;
@@ -777,7 +781,7 @@ nav{
     color: white;
 }
 
-.contact .container .contactInfo .box .text h3{
+.contact .inner-container .contactInfo .box .text h3{
     font-weight: 600;
     color: #FC6701;
 }
@@ -842,6 +846,7 @@ nav{
     cursor: pointer;
     padding: 1rem;
 }
+
 /* Footer Styles */
 footer {
     padding: 4.9rem 0;
@@ -1122,18 +1127,23 @@ footer {
     }
 
     .contact{
-        padding: 5rem 4rem;
+        padding-bottom: 9rem;
+    }
+    
+
+    .contact .content .title-heading{
+        margin-bottom: 8.5rem;
     }
 
-    .contact .container{
+    .contact .inner-container{
         flex-direction: row;
     }
 
-    .contact .container .contactInfo{
+    .contact .inner-container .contactInfo{
         width: 50%;
     }
 
-    .contact .container .contactForm{
+    .contact .inner-container .contactForm{
         width: 45%;
     }
 }
