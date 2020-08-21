@@ -764,12 +764,13 @@ nav{
 .contact .inner-container .contactInfo .box .icon{
     min-width: 6rem;
     height: 6rem;
-    background: white;
+    background: #ec8c0d;;
+    color: #2D4561;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    font-size: 2.2rem;
+    font-size: 2.7rem;
 }
 
 .contact .inner-container .contactInfo .box .text{
@@ -789,12 +790,14 @@ nav{
 .contactForm{
     width: 100%;
     padding: 3rem;
-    background: white;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 1.2rem;
 }
 
 .contactForm h2{
+    font-family: 'Aldrich', sans-serif;
     font-size: 3rem;
-    color: #333;
+    color: #fafafa;
     font-weight: 500;
     margin-bottom: 1rem;
 }
@@ -808,15 +811,18 @@ nav{
 .contactForm .inputBox input, .contactForm .inputBox textarea{
     width: 100%;
     padding: 0.5rem 0;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 1rem 0;
     border: none;
-    border-bottom: 2px solid #333;
+    color: white;
+    border-bottom: 2px solid white;
+    background: transparent;
     outline: none;
     resize: none;
 }
 
 .contactForm .inputBox span{
+    font-family: 'Aldrich', sans-serif;
     position: absolute;
     left: 0;
     padding: 0.5rem 0;
@@ -824,27 +830,39 @@ nav{
     margin: 1rem 0;
     pointer-events: none;
     transition: 0.5s;
-    color: #666;
+    color: white;
 }
 
 .contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox textarea:focus ~ span{
-    color: #ec8c0d;
-    font-size: 1.3rem;
-    transform: translateY(-20px);
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #FC6701;
+    font-size: 1.35rem;
+    transform: translateY(-25px);
 }
 
 .contactForm .inputBox input[type="submit"]{
-    position: relative;
+    background-color: #FC6701;
     width: 40%;
     max-width: 150px;
-    left: 50%;
+    border-radius: 1.2rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    border: solid 3px #FC6701;
+    color: #fafafa;
+    display: inline-block;
+    margin-top: 2.2rem;
+    padding: 1rem 2rem;
+    margin-left: 50%;
     transform: translateX(-50%);
-    font-weight: 300;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 1rem;
+    transition: all 650ms;
+}
+
+.contactForm .inputBox input[type="submit"]:hover{
+    background-color: transparent;
 }
 
 /* Footer Styles */
