@@ -237,11 +237,12 @@ nav{
 
 /* First Steps */
 .main {
+    margin-top: 8rem;
     width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to right, #9c27b0, #8ecdff);
+    background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.9) 100%);
 }
 
 .information{
@@ -445,6 +446,7 @@ footer {
 @media screen and (min-width: 700px){
     header{
         height: 8rem;
+        background: linear-gradient(135deg, rgba(34, 62, 122, .8) 0%, rgba(35, 57, 82, .9) 100%);
     }
 
     .nav-brand{
