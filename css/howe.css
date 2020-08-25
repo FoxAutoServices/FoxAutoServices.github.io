@@ -260,7 +260,8 @@ nav{
     top: 0;
     left: 0;
     border-radius: 50%;
-    background: gray;
+    transform: rotate(0deg);
+    transition: 1s;
 }
 
 .feature img{
@@ -269,6 +270,16 @@ nav{
 
 .feature{
     position: absolute;
+    display: flex;
+    color: white;
+}
+
+.feature div{
+    margin-left: 3rem;
+}
+
+.feature div p{
+    margin-top: .8rem;
 }
 
 .one{
@@ -279,16 +290,68 @@ nav{
 .two{
     top: 150px;
     left: 350px;
+    transform: rotate(-90deg);
 }
 
 .three{
     bottom: 450px;
     left: 50px;
+    transform: rotate(-180deg);
 }
 
 .four{
     bottom: 150px;
     right: 350px;
+    transform: rotate(-270deg);
+}
+
+.mobile{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.controls{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.controls h3{
+    margin: 1.5rem 0;
+    color: white;
+}
+
+#upBtn{
+    font-size: 1.5rem;
+    width: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+#downBtn{
+    font-size: 1.5rem;
+    width: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid white;
+    border-right: 500px solid transparent;
+    border-left: 500px solid white;
+    border-bottom: 500px solid white;
+    position: absolute;
+    left: 0;
+    top: 0;
+
 }
 /* Footer Styles */
 footer {

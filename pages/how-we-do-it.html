@@ -29,7 +29,7 @@
     </div>
 
     <!-- Navbar -->
-    <header>
+    <header id="navbar">
         <div class="container">
             <nav>
                 <div class="nav-brand">
@@ -95,47 +95,56 @@
         </div>
 
         <section class="main">
-            <div class="information">
-                <div id="circle">
-                    <div class="feature one">
-                        <img src="../images/car-service.png" alt="Report the damages">
-                        <div class="">
-                            <h1>Send us your request</h1>
-                            <p>12MP, Wide Angle Lens</p>
+            <div class="container">
+                <div class="information">
+                    <div class="overlay"></div>
+                    <img src="../images/how-we-do-it-3.png" alt="" class="mobile">
+                    <div id="circle">
+                        <div class="feature one">
+                            <img src="../images/car-service.png" alt="Report the damages">
+                            <div class="">
+                                <h1>Send us your request</h1>
+                                <p>12MP, Wide Angle Lens</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="feature two">
-                        <img src="../images/car-icon.png" alt="Car goes to reapir">
-                        <div class="">
-                            <h1>Speciallized review</h1>
-                            <p>12MP, Wide Angle Lens</p>
+                        <div class="feature two">
+                            <img src="../images/car-icon.png" alt="Car goes to reapir">
+                            <div class="">
+                                <h1>Speciallized review</h1>
+                                <p>12MP, Wide Angle Lens</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="feature three">
-                        <img src="../images/car-service.png" alt="Car repairs">
-                        <div class="">
-                            <h1>Mechanical Repairs</h1>
-                            <p>12MP, Wide Angle Lens</p>
+                        <div class="feature three">
+                            <img src="../images/car-service.png" alt="Car repairs">
+                            <div class="">
+                                <h1>Mechanical Repairs</h1>
+                                <p>12MP, Wide Angle Lens</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="feature four">
-                        <img src="../images/car-wash.png" alt="Car detailed">
-                        <div class="">
-                            <h1>Final Detailing</h1>
-                            <p>12MP, Wide Angle Lens</p>
+                        <div class="feature four">
+                            <img src="../images/car-wash.png" alt="Car detailed">
+                            <div class="">
+                                <h1>Final Detailing</h1>
+                                <p>12MP, Wide Angle Lens</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="controls">
+                    <i class="fas fa-chevron-up" id="upBtn"></i>
+                    <h3>Features</h3>
+                    <i class="fas fa-chevron-down" id="downBtn"></i>
+                </div>
             </div>
         </section>
-
     </main>
 
     <!-- Footer -->
     <footer id="footer">
         <div class="container">
             <div class="back-to-top">
-                <a href="#hero"> <i class="fas fa-chevron-up"></i></a>
+                <a href="#navbar"><i class="fas fa-chevron-up"></i></a>
             </div>
             <div class="footer-content">
                 <div class="footer-content-about title-heading">
@@ -168,9 +177,7 @@
 
     <!-- Jquery -->
     <script src="../js/jquey-3.4.1.js"></script>
-    <!-- Bootstrap -->
-    <script src="../js/bootstrap.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="../scripts.js"></script>
     <script type="text/javascript">
         $(window).on("load", function () {
             $(" .loading-overlay .loader").fadeOut(850, function () {

@@ -10,6 +10,26 @@ selectElement('.close').addEventListener('click', () => {
     selectElement('.nav-list').classList.remove('active');
 })
 
+//How we do it rotate function
+var circle = document.getElementById("circle");
+var upBtn = document.getElementById("upBtn");
+var downBtn = document.getElementById("downBtn");
+
+var rotateValue = circle.style.transform;
+var rotateSum;
+
+selectElement('#upBtn').addEventListener('click', () => {
+    rotateSum = rotateValue + "rotate(-90deg)";
+    circle.style.transform = rotateSum;
+    rotateValue = rotateSum;
+})
+
+selectElement('#downBtn').addEventListener('click', () => {
+    rotateSum = rotateValue + "rotate(+90deg)";
+    circle.style.transform = rotateSum;
+    rotateValue = rotateSum;
+})
+
 //Scroll reveal
 
 window.sr = new ScrollReveal();
