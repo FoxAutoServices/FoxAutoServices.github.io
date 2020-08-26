@@ -103,7 +103,7 @@ section{
     position: fixed;
     bottom: 3rem;
     right: 2.5rem;
-    z-index: 999;
+    z-index: 9999;
     cursor: pointer;
 }
 
