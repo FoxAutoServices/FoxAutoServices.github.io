@@ -325,6 +325,7 @@
     }
     
     .main-message{
+        text-align: center;
         max-width: 100%;
         transform: translateY(45%);
     }
@@ -334,6 +335,7 @@
     }
 
     .main-message p{
-        max-width: 65rem;
+        max-width: 100%;
+        text-align: center;
     }
 }

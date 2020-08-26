@@ -113,7 +113,7 @@
 .how-we-do-it-image{
     position: relative;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
 }
 
 .how-we-do-it .btn{
@@ -710,7 +710,7 @@
 
     .how-we-do-it-image{
         float: right;
-        margin-top: -6rem;
+        margin-top: 10%;
         margin-bottom: 4rem;
         width: 43%;
     }
