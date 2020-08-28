@@ -242,6 +242,65 @@
 
 }
 
+.process{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: #fafafa;
+}
+
+.process .container .icon{
+    position: relative;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.process .icon .iconBx{
+    position: relative;
+    background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%), url("../images/FoxAutoServicesLogo.jpeg") center no-repeat;
+    background-size: contain;
+    width: calc(50% - 40px);
+    margin: 2rem 1rem;
+    padding: 0 0;
+    height: 24rem;
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 14px;
+    transition: 0.5s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .07);
+}
+
+.process .icon .iconBx.active{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+}
+
+.process .icon .iconBx img{
+    max-width: 14rem;
+    filter: opacity(0.5);
+    transition: 0.5s;
+    transform: scale(0.7);
+}
+
+.process .icon .iconBx h3{
+    color: white;
+    font-size: 2.8rem;
+    letter-spacing: 1.3px;
+}
+
+.process .icon .iconBx.active img{
+    filter: opacity(1);
+    transform: scale(1);
+}
+
 /* Media queries */
 
 @media screen and (min-width: 350px){
