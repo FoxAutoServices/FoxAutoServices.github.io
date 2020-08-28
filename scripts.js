@@ -47,6 +47,8 @@ sr.reveal('.animate-bottom', {
 var circle = document.getElementById("circle");
 var upBtn = document.getElementById("upBtn");
 var downBtn = document.getElementById("downBtn");
+var iconBx = document.querySelectorAll('.iconBx');
+var contentBx = document.querySelectorAll('.contentBx');
 if (circle != null) {
     var rotateValue = circle.style.transform;
     var rotateSum;
@@ -61,5 +63,21 @@ if (circle != null) {
         rotateSum = rotateValue + "rotate(+90deg)";
         circle.style.transform = rotateSum;
         rotateValue = rotateSum;
+    })
+}
+
+
+
+for (var i = 0; i < iconBx.length; i++) {
+    iconBx[i].addEventListener('mouseover', function () {
+        for (var i = 0; i < contentBx.length; i++) {
+            contentBx[i].className = 'contentBx';
+        }
+        document.getElementById(this.dataset.id).className = 'contentBx active';
+
+        for (var i = 0; i < iconBx.length; i++) {
+            iconBx[i].className = 'iconBx';
+        }
+        this.className = 'iconBx active';
     })
 }
