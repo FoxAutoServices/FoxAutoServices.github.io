@@ -242,40 +242,6 @@
 
 }
 
-/* Second steps styles */
-.second-subtitle{
-    padding-top: 4rem;
-}
-
-.main.second-main::before{
-    content: '';
-    position: absolute;
-    bottom: -3rem;
-    left: 0;
-    width: 100%;
-    box-shadow: none;
-    z-index: 999;
-}
-
-.second-main .mobile{
-    width: 300px;
-    left: 30%;
-}
-
-#upBtn2{
-    font-size: 2rem;
-    width: 1.5rem;
-    color: #FC6701;
-    cursor: pointer;
-}
-
-#downBtn2{
-    font-size: 2rem;
-    width: 1.5rem;
-    color: #FC6701;
-    cursor: pointer;
-}
-
 /* Media queries */
 
 @media screen and (min-width: 350px){
