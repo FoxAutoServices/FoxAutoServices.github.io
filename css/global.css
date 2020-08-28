@@ -327,6 +327,17 @@ footer {
     color: #ec8c0d;
 }
 
+/* Components */
+
+.icon-btn{
+    color: #ec8c0d;
+    transform: translateY(-4rem);
+    opacity: 0;
+    margin-left: .4rem;
+    font-size: 3.4rem;
+    animation: fadeDown 1.5s infinite;
+}
+
 /* Media queries */
 @media screen and (min-width: 700px){
     header{
@@ -436,13 +447,22 @@ footer {
     }
 }
 
+@keyframes fadeDown{
+    0%{
+        transform: translateY(-4rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
 @keyframes rotate{
     100%{
         transform: rotate(360deg);
     }
 }
-
-
 
 @keyframes scaleAndFade {
     from { 
