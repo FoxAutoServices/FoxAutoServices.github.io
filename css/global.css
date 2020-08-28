@@ -329,12 +329,18 @@ footer {
 
 /* Components */
 
+.down-icon {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
 .icon-btn{
     color: #ec8c0d;
-    transform: translateY(-4rem);
+    transform: translateY(-2rem);
     opacity: 0;
     margin-left: .4rem;
-    font-size: 3.4rem;
+    font-size: 4.4rem;
     animation: fadeDown 1.5s infinite;
 }
 
