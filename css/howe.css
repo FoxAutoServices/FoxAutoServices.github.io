@@ -250,6 +250,12 @@
     background: #fafafa;
 }
 
+.process .inner-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
 .process .container .icon{
     position: relative;
     width: 50%;
