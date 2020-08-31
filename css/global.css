@@ -36,6 +36,13 @@ section{
     padding: 5rem 0;
 }
 
+.center{
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 /* Global Text and heading styles */
 
 .title-heading{
