@@ -255,6 +255,70 @@ nav{
     color: rgba(0, 0, 0, .7);
 }
 
+/* Hero styles */
+
+.hero{
+    width: 100%;
+    min-height: 65rem;
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%), url("../images/porshe.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 4.7rem;
+    background: url("../images/wave-small.png") center no-repeat;
+    background-size: cover;
+}
+
+.main-message{
+    width: 100%;
+    max-width: 100%;
+    color: #fafafa;
+    text-transform: uppercase;
+    transform: translateY(20%);
+}
+
+.main-message h3{
+    font-size: 2.1rem;
+}
+
+.main-message h1{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 5.7rem;
+    margin: 1rem 0;
+}
+
+.main-message p{
+    text-transform: lowercase;
+}
+
+.btn{
+    background-color: #FC6701;
+    border-radius: 1.2rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    border: solid 3px #FC6701;
+    color: #fafafa;
+    display: inline-block;
+    margin-top: 2.2rem;
+    padding: 1.2rem 2.3rem;
+    transition: all 650ms;
+}
+
+.btn:hover{
+    color: #FC6701;
+    background-color: transparent;
+}
+
 /* Footer Styles */
 footer {
     padding: 4.9rem 0;
@@ -352,6 +416,29 @@ footer {
 }
 
 /* Media queries */
+
+@media screen and (min-width: 350px){
+    .main-message{
+        transform: translateY(20%);
+    }
+}
+
+@media screen and (min-width: 470px){
+    .hero::before{
+        height: 9.4rem;
+        background: url("../images/wave-medium.png");
+        background-size: cover;
+    }
+
+    .main-message{
+        transform: translateY(25%);
+    }
+
+    .main-message p {
+        max-width: 70%;
+    }
+}
+
 @media screen and (min-width: 700px){
     header{
         height: 8rem;
@@ -413,6 +500,10 @@ footer {
     .nav-link:hover::before{
         transform: scaleX(1);
     }
+    
+    .hero{
+        height: 70vh;
+    }
 
     .main-message{
         transform: translateY(35%);
@@ -432,6 +523,36 @@ footer {
     .fab-container{
         bottom: 5rem;
         right: 5rem;
+    }
+
+    .hero::before{
+        height: 22.7rem;
+        background: url("../images/wave-large.png");
+        background-size: cover;
+    }
+
+    .main-message{
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    .hero{
+        height: 90vh;
+    }
+    
+    main .main-message{
+        max-width: 100%;
+        transform: translateY(35%);
+    }
+
+    .main-message h1{
+        font-size: 8.4rem;
+    }
+
+    .main-message p{
+        max-width: 65rem;
     }
 }
 
