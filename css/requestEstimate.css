@@ -140,12 +140,13 @@
 .col-4{
     float: left;
     width: 44%;
-    padding: 30px 20px;
+    padding: 3rem 2rem;
 }
 
 .col-8{
     width: 55%;
     float: right;
+    padding: 3rem 0;
     right: 0;
 }
 
@@ -184,7 +185,14 @@
 }
 
 .formulario__checkbox {
+    height: 2rem;
+    width: 2rem;
     margin-right: 10px;
+}
+
+.formulario__label p{
+    display: inline;
+    padding: 2px 1rem;
 }
 
 .formulario__grupo-terminos, 
