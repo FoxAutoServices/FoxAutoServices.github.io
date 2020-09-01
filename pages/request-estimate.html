@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fox Auto Service | Request Estimate</title>
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Own styles -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/howe.css">
+</head>
+
+<body>
+    <!-- Start preload -->
+    <div class="loading-overlay text-center">
+        <div class="loader">
+            <div class="loader-div">
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-brand">
+                    <a href="../index.html">
+                        <img src="../images/fas-logo.png" alt="Business name">
+                    </a>
+                </div>
+
+                <div class="menu-icons open">
+                    <i class="icon ion-md-menu"></i>
+                </div>
+
+                <ul class="nav-list">
+                    <div class="menu-icons close">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pricing" class="nav-link">Special Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link current">Request an estimate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#footer" class="nav-link">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- FAB -->
+        <div class="fab-container">
+            <div class="main-fab fab-icon-holder">
+                <i class="icon ion-md-help"></i>
+            </div>
+            <ul class="fab-options">
+                <li>
+                    <span class="fab-label"> Request Estimate</span>
+                    <div class="fab-icon-holder">
+                        <i class="icon ion-md-mail"></i>
+                    </div>
+                </li>
+                <li>
+                    <span class="fab-label">Make Appointment</span>
+                    <div class="fab-icon-holder">
+                        <i class="icon ion-md-calendar"></i>
+                    </div>
+                </li>
+                <li>
+                    <span class="fab-label">Get Directions</span>
+                    <div class="fab-icon-holder">
+                        <i class="icon ion-md-navigate"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="main-message">
+                    <h3>Get started with us and</h3>
+                    <h1 class="accent-text">Request an estimate</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur nobis eveniet, quis a ratione
+                        sunt
+                        neque qui quos dolorum ipsam culpa non quasi cumque dolorem eius dolores sequi optio libero.Odio
+                        officia natus eos qui</p>
+                    <div class="cta">
+                        <a href="#first-steps" class="btn">Start</i></a>
+                    </div>
+                    <div class="down-icon">
+                        <i class="icon-btn icon ion-md-arrow-dropdown-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Jquery -->
+    <script src="../js/jquey-3.4.1.js"></script>
+    <!-- Scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Own scripts -->
+    <script src="../scripts.js"></script>
+    <script type="text/javascript">
+        $(window).on("load", function () {
+            $(" .loading-overlay .loader").fadeOut(850, function () {
+                $("body").css("overflow", "auto");
+                $(this).parent().fadeOut(450,
+                    function () {
+                        $(this).remove();
+                    });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
