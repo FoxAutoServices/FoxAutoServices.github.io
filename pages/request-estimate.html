@@ -397,29 +397,30 @@
                                 images before sending here.<br><br>
                             </p>
                         </div>
-                        <div class="formulario__grupo-input">
-                            <input type="file" name="image1" id="image1" class="inputfile">
-                            <label for="image1">Upload Image 1</label>
-                            <div class="image-preview" id="imagePreview">
-                                <img src="" alt="Image Preview" class="image-preview__image">
-                                <span class="image-preview__default-text ">Image 1 Preview</span>
+                        <div class="row">
+                            <div class="formulario__grupo-input">
+                                <div class="image-preview" id="imagePreview">
+                                    <img src="" alt="Image Preview" class="image-preview__image">
+                                    <span class="image-preview__default-text ">Image 1 Preview</span>
+                                </div>
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                <input type="file" name="image1" id="image1" class="inputfile">
+                                <label for="image1">Upload Image 1</label>
                             </div>
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                        </div>
-                        <br><br>
-                        <div class="formulario__grupo-input">
-                            <input type="file" name="image2" id="image2" class="inputfile2">
-                            <label for="image2">Upload Image 2</label>
-                            <div class="image-preview2" id="imagePreview2">
-                                <img src="" alt="Image Preview" class="image-preview__image2">
-                                <span class="image-preview__default-text2 ">Image 2 Preview</span>
+                            <div class="formulario__grupo-input">
+                                <div class="image-preview2" id="imagePreview2">
+                                    <img src="" alt="Image Preview" class="image-preview__image2">
+                                    <span class="image-preview__default-text2 ">Image 2 Preview</span>
+                                </div>
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                <input type="file" name="image2" id="image2" class="inputfile2">
+                                <label for="image2">Upload Image 2</label>
                             </div>
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
                     </div>
 
                     <div class="formulario__grupo formulario__grupo-btn-enviar">
-                        <button type="submit" name="submit" id="submit" class="btn cta-btn">Send Request</button>
+                        <button type="submit" name="submit" id="submit" class="cta btn">Send Request</button>
                         <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado
                             exitosamente!
                         </p>
