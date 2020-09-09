@@ -29,28 +29,6 @@
     background-size: cover;
 }
 
-.main-message{
-    width: 100%;
-    max-width: 55rem;
-    color: #fafafa;
-    text-transform: uppercase;
-    transform: translateY(20%);
-}
-
-.main-message h3{
-    font-size: 2.1rem;
-}
-
-.main-message h1{
-    font-family: 'Aldrich', sans-serif;
-    font-size: 5.7rem;
-    margin: 1rem 0;
-}
-
-.main-message p{
-    text-transform: lowercase;
-}
-
 .btn{
     background-color: #FC6701;
     border-radius: 1.2rem;
@@ -624,16 +602,6 @@
 }
 
 @media screen and (min-width: 470px){
-    .hero::before{
-        height: 9.4rem;
-        background: url("images/wave-medium.png");
-        background-size: cover;
-    }
-
-    .main-message{
-        transform: translateY(25%);
-    }
-
     .testimonials::before{
         height: 9.4rem;
         background: url("images/wave-medium-reversed.png");
@@ -648,14 +616,7 @@
 }
 
 @media screen and (min-width: 700px){
-    .hero{
-        height: 70vh;
-    }
-
-    .main-message{
-        transform: translateY(35%);
-    }
-
+    
     .testimonial{
         top: 65%;
     }
@@ -694,16 +655,6 @@
 }
 
 @media screen and (min-width: 950px){
-    .hero::before{
-        height: 22.7rem;
-        background: url("images/wave-large.png");
-        background-size: cover;
-    }
-
-    .main-message{
-        max-width: 70rem;
-    }
-
     .how-we-do-it-text{
         width: 53%;
     }
@@ -763,22 +714,7 @@
 }
 
 @media screen and (min-width: 1200px){
-    .hero{
-        height: 90vh;
-    }
     
-    .main-message{
-        max-width: 100%;
-        transform: translateY(45%);
-    }
-
-    .main-message h1{
-        font-size: 8.4rem;
-    }
-
-    .main-message p{
-        max-width: 65rem;
-    }
 }
 
 @keyframes up{
