@@ -18,17 +18,6 @@
     position: relative;
 }
 
-.hero::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 100%;
-    height: 4.7rem;
-    background: url("images/wave-small.png") center no-repeat;
-    background-size: cover;
-}
-
 .btn{
     background-color: #FC6701;
     border-radius: 1.2rem;

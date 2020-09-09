@@ -1,0 +1,66 @@
+/* Color palette 
+- main color: #172A54 rgb(34, 62, 122)
+- secondary color: #2D4561 rgb(35, 57, 82)
+- accent color: #FC6701 rgb(252, 103, 1)
+- Light accent color: #FFBB04 rgb(255, 187, 4)
+- text clor: #FAFAFA
+*/
+
+/* nav styles */
+.nav-item{
+    margin: 0 1.5rem;
+}
+
+/* Hero styles */
+.hero{
+    width: 100%;
+    min-height: 65rem;
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%), url("../images/bmw.jpg") center no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    position: relative;
+}
+
+/* info section */
+.collision-info .title-heading{
+    margin-bottom: 4.5rem;
+}
+
+
+.info-icon-row{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    padding: 0 5%;
+}
+
+.icon-row{
+    font-size: 2rem;
+    color: #fc6701;
+    margin: auto 0;
+    opacity: 1;
+    animation: spin .5s forwards;
+    animation-delay: 0.2s;
+}
+
+.icon-row i{
+    padding-right: 1.4rem;
+}
+
+.icon-row-desc{
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, .7);
+}
+
+.icon-row-desc strong{
+    background-color: white;
+    padding: 0 0.3rem;
+    transition: all 650ms;
+}
+
+.icon-row-desc:hover > strong{
+    background-color: #fc6701;
+    color: white;
+}
