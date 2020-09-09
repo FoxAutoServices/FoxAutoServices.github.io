@@ -59,7 +59,7 @@ section{
 .title-heading h1{
     font-family: 'Aldrich', sans-serif;
     text-transform: uppercase;
-    font-size: 3.6rem;
+    font-size: 3.4rem;
     margin: .5rem 0 1rem;
 }
 
@@ -511,6 +511,7 @@ footer {
 
     .title-heading h3{
         font-size: 2.9rem;
+        font-weight: 100;
     }
 
     .title-heading h1{
@@ -549,6 +550,7 @@ footer {
 
     .main-message h1{
         font-size: 8.4rem;
+        font-weight: 100;
     }
 
     .main-message p{
