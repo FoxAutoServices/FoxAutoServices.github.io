@@ -6,6 +6,10 @@
 - text clor: #FAFAFA
 */
 
+p{
+    font-size: 1.8rem;
+}
+
 /* nav styles */
 .nav-item{
     margin: 0 1.5rem;
@@ -63,4 +67,108 @@
 .icon-row-desc:hover > strong{
     background-color: #fc6701;
     color: white;
+}
+
+.faq .question{
+    margin-bottom: 6rem;
+}
+
+.headline-small{
+    font-size: 3rem;
+    font-family: 'Aldrich', sans-serif;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, .7);
+}
+
+.question .headline-small{
+    margin: 1rem 0;
+}
+
+.line {
+    width: 100%;
+    max-width: 30rem;
+    height: .25rem;
+    background-color: #fc6701;
+    margin-bottom: 1rem;
+    position: relative;
+    opacity: 0;
+    animation: grow 2s forwards;
+    animation-delay: .9s;
+}
+
+.left-info,
+.right-info{
+    position: relative;
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.left-info .col-8{
+    width: 66%;
+    float: left;
+    padding-right: 20px ;
+    margin: auto 0;
+    margin-right: 2rem;
+}
+
+.left-info .col-4{
+    width: 33%;
+    padding: 10px;
+    margin: auto 0;
+}
+
+.col-4 img{
+        width: 100%;
+        object-fit: contain;
+}
+
+.right-info .col-8{
+    width: 66%;
+    float: right;
+    padding-right: 20px;
+    margin: auto 0;
+}
+
+.right-info .col-4{
+    width: 33%;
+    float: left;
+    padding: 10px;
+    margin: auto 0;
+    margin-right: 2rem;
+}
+
+@media screen and (max-width: 800px){
+    .left-info,
+    .right-info{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-info .col-8{
+        width: 100%;
+    }
+
+    .left-info .col-4{
+        width: 100%;
+    }
+
+    .col-4 img{
+            width: 100%;
+            object-fit: contain;
+    }
+
+    .right-info .col-8{
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .right-info .col-4{
+        width: 100%;
+    }
+
+    .hero-collision .sub-headline{
+        font-size: 5.4rem;
+    }
+
 }
