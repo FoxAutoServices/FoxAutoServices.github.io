@@ -68,39 +68,39 @@ if (circle != null) {
         } else {
             featureNum--;
         }
-        // switch (featureNum) {
-        //     case 1:
-        //         one.style.display = 'inline';
-        //         two.style.display = 'none';
-        //         three.style.display = 'none';
-        //         four.style.display = 'none';
-        //         break;
-        //     case 2:
-        //         one.style.display = 'none';
-        //         two.style.display = 'inline';
-        //         three.style.display = 'none';
-        //         four.style.display = 'none';
-        //         break;
-        //     case 3:
-        //         one.style.display = 'none';
-        //         two.style.display = 'none';
-        //         three.style.display = 'inline';
-        //         four.style.display = 'none';
-        //         break;
-        //     case 4:
-        //         one.style.display = 'none';
-        //         two.style.display = 'none';
-        //         three.style.display = 'none';
-        //         four.style.display = 'inline';
-        //         break;
+        switch (featureNum) {
+            case 1:
+                one.style.display = 'inline';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'none';
+                break;
+            case 2:
+                one.style.display = 'none';
+                two.style.display = 'inline';
+                three.style.display = 'none';
+                four.style.display = 'none';
+                break;
+            case 3:
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'inline';
+                four.style.display = 'none';
+                break;
+            case 4:
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'inline';
+                break;
 
-        //     default:
-        //         one.style.display = 'inline';
-        //         two.style.display = 'none';
-        //         three.style.display = 'none';
-        //         four.style.display = 'none';
-        //         break;
-        // }
+            default:
+                one.style.display = 'inline';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'none';
+                break;
+        }
     })
 
     selectElement('#downBtn').addEventListener('click', () => {
@@ -112,39 +112,39 @@ if (circle != null) {
         } else {
             featureNum++;
         }
-        // switch (featureNum) {
-        //     case 1:
-        //         one.style.display = 'inline';
-        //         two.style.display = 'none';
-        //         three.style.display = 'none';
-        //         four.style.display = 'none';
-        //         break;
-        //     case 2:
-        //         one.style.display = 'none';
-        //         two.style.display = 'inline';
-        //         three.style.display = 'none';
-        //         four.style.display = 'none';
-        //         break;
-        //     case 3:
-        //         one.style.display = 'none';
-        //         two.style.display = 'none';
-        //         three.style.display = 'inline';
-        //         four.style.display = 'none';
-        //         break;
-        //     case 4:
-        //         one.style.display = 'none';
-        //         two.style.display = 'none';
-        //         three.style.display = 'none';
-        //         four.style.display = 'inline';
-        //         break;
+        switch (featureNum) {
+            case 1:
+                one.style.display = 'inline';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'none';
+                break;
+            case 2:
+                one.style.display = 'none';
+                two.style.display = 'inline';
+                three.style.display = 'none';
+                four.style.display = 'none';
+                break;
+            case 3:
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'inline';
+                four.style.display = 'none';
+                break;
+            case 4:
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'inline';
+                break;
 
-        //     default:
-        //         one.style.display = 'inline';
-        //         two.style.display = 'none';
-        //         three.style.display = 'none';
-        //         four.style.display = 'none';
-        //         break;
-        // }
+            default:
+                one.style.display = 'inline';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'none';
+                break;
+        }
     })
 }
 
