@@ -10,11 +10,6 @@ p{
     font-size: 1.8rem;
 }
 
-/* nav styles */
-.nav-item{
-    margin: 0 1.5rem;
-}
-
 /* Hero styles */
 .hero{
     width: 100%;
@@ -170,5 +165,5 @@ p{
     .hero-collision .sub-headline{
         font-size: 5.4rem;
     }
-
+    
 }
