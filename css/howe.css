@@ -85,6 +85,7 @@
 }
 
 .feature h1{
+    margin-top: 1rem;
     font-weight: 600;
     font-size: 1.8rem;
     letter-spacing: 1.3px;
