@@ -413,7 +413,6 @@
         top: 75%;
         right: 30%;
         transform: rotate(-270deg);
-        background-color: #FC6701;
         display: none;
     }
 
@@ -457,6 +456,7 @@
     }
     
     .feature{
+        width: 45rem;
         min-width: 45rem;
     }
 
@@ -491,9 +491,10 @@
     }
 
     .four{
-        top: 67%;
-        right: 50%;
-        transform: rotate(-270deg) translate(30% , -120%);
+        top: 70%;
+        left: 36%;
+        background-color: red;
+        transform: rotate(-270deg) translate(40% , 0);
         display: inline;
     }
 }
