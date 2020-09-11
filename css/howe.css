@@ -387,25 +387,29 @@
     .one{
         top: 415px;
         left: 560px;
-        transform: translateX(20%);
+        transform: translateX(30%);
     }
 
     .two{
         top: 150px;
         left: 350px;
         transform: rotate(-90deg);
+        display: inline;
     }
 
     .three{
         bottom: 420px;
-        right: 0px;
-        transform: rotate(-180deg) translateX(20%);
+        right: 20px;
+        transform: rotate(-180deg) translateX(40%);
+        display: inline;
     }
 
     .four{
-        bottom: 140px;
-        right: 350px;
+        top: 75%;
+        right: 30%;
         transform: rotate(-270deg);
+        background-color: #FC6701;
+        display: inline;
     }
 
     .mobile{
@@ -436,6 +440,21 @@
         transform: translateY(20%);
     }
 
+    #circle{
+        width: 100rem;
+        height: 100rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        transform: rotate(0deg);
+        transition: 1s;
+    }
+    
+    .feature{
+        min-width: 45rem;
+    }
+
     .information{
         width: 100rem;
         height: 100rem;
@@ -446,30 +465,30 @@
     }
 
     .one{
-        top: 430px;
-        left: 560px;
-        transform: translateX(20%);
-        background-color: red;
+        top: 50%;
+        left: 600px;
+        transform: translate(20%, -50%);
+        display: inline;
     }
 
     .two{
-        top: 150px;
-        left: 350px;
-        transform: rotate(-90deg);
-        background-color: blue;
+        bottom: 67%;
+        left: 50%;
+        transform: rotate(-90deg) translate(30%, -120%);
+        display: inline;
     }
 
     .three{
-        bottom: 430px;
-        left: -50px;
-        transform: rotate(-180deg);
-        background-color: green;
+        bottom: 50%;
+        left: 5%;
+        transform: rotate(-180deg) translate(35%, -50%);
+        display: inline;
     }
 
     .four{
-        bottom: 60px;
-        right: 280px;
-        transform: rotate(-270deg);
-        background-color: violet;
+        top: 67%;
+        right: 50%;
+        transform: rotate(-270deg) translate(30% , -120%);
+        display: inline;
     }
 }
