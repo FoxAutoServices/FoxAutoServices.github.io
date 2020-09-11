@@ -293,6 +293,49 @@
 }
 
 @media screen and (min-width: 470px){
+    #circle{
+        width: 90%;
+        height: 60rem;
+        top: -33%;
+        left: 3rem;
+    }
+
+    .feature{
+        width: 25rem;
+    }
+
+    .feature h1{
+        font-weight: 600;
+        font-size: 2.4rem;
+        letter-spacing: 1.3px;
+    }
+
+    .one{
+        top: 70%;
+        left: 27%;
+        display: inline;
+    }
+
+    .two{
+        top: 34%;
+        left: 65%;
+        transform: rotate(-90deg);
+        display: none;
+    }
+
+    .three{
+        bottom: 70%;
+        left: 23%;
+        display: none;
+        transform: rotate(-180deg);
+    }
+
+    .four{
+        top: 33%;
+        right:70%;
+        transform: rotate(-270deg);
+        display: none;
+    }
     
 }
 
@@ -305,13 +348,6 @@
     .main-message p{
         max-width: 70%;
     }
-    
-}
-
-@media screen and (min-width: 1200px){
-    main .main-message{
-        transform: translateY(20%);
-    }
 
     /* First Steps */
     .information{
@@ -319,8 +355,12 @@
         height: 100rem;
         position: absolute;
         top: 50%;
-        left: -10%;
+        left: -30%;
         transform: translateY(-50%);
+    }
+
+    .feature{
+        max-width: 30rem;
     }
 
     #circle{
@@ -338,28 +378,14 @@
         width: 7rem;
     }
 
-    .feature{
-        position: absolute;
-        display: flex;
-        color: white;
-    }
-
     .feature h1{
         font-weight: 600;
         font-size: 3rem;
         letter-spacing: 1.3px;
     }
 
-    .feature div{
-        margin-left: 2rem;
-    }
-
-    .feature div p{
-        margin-top: .8rem;
-    }
-
     .one{
-        top: 430px;
+        top: 415px;
         left: 560px;
         transform: translateX(20%);
     }
@@ -371,14 +397,14 @@
     }
 
     .three{
-        bottom: 430px;
-        left: -50px;
-        transform: rotate(-180deg);
+        bottom: 420px;
+        right: 0px;
+        transform: rotate(-180deg) translateX(20%);
     }
 
     .four{
-        bottom: 60px;
-        right: 280px;
+        bottom: 140px;
+        right: 350px;
         transform: rotate(-270deg);
     }
 
@@ -401,5 +427,49 @@
         position: absolute;
         left: 0;
         top: 0;
+    }
+    
+}
+
+@media screen and (min-width: 1200px){
+    main .main-message{
+        transform: translateY(20%);
+    }
+
+    .information{
+        width: 100rem;
+        height: 100rem;
+        position: absolute;
+        top: 50%;
+        left: -15%;
+        transform: translateY(-50%);
+    }
+
+    .one{
+        top: 430px;
+        left: 560px;
+        transform: translateX(20%);
+        background-color: red;
+    }
+
+    .two{
+        top: 150px;
+        left: 350px;
+        transform: rotate(-90deg);
+        background-color: blue;
+    }
+
+    .three{
+        bottom: 430px;
+        left: -50px;
+        transform: rotate(-180deg);
+        background-color: green;
+    }
+
+    .four{
+        bottom: 60px;
+        right: 280px;
+        transform: rotate(-270deg);
+        background-color: violet;
     }
 }
