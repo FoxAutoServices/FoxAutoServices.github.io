@@ -49,6 +49,12 @@ var upBtn = document.getElementById("upBtn");
 var downBtn = document.getElementById("downBtn");
 var iconBx = document.querySelectorAll('.iconBx');
 var contentBx = document.querySelectorAll('.contentBx');
+var one = selectElement('.one');
+var two = selectElement('.two');
+var three = selectElement('.three');
+var four = selectElement('.four');
+var featureNum = 1;
+
 if (circle != null) {
     var rotateValue = circle.style.transform;
     var rotateSum;
@@ -57,15 +63,90 @@ if (circle != null) {
         rotateSum = rotateValue + "rotate(-90deg)";
         circle.style.transform = rotateSum;
         rotateValue = rotateSum;
+        if (featureNum == 1) {
+            featureNum = 4;
+        } else {
+            featureNum--;
+        }
+        switch (featureNum) {
+            case 1:
+                one.style.display = 'inline';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'none';
+                break;
+            case 2:
+                one.style.display = 'none';
+                two.style.display = 'inline';
+                three.style.display = 'none';
+                four.style.display = 'none';
+                break;
+            case 3:
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'inline';
+                four.style.display = 'none';
+                break;
+            case 4:
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'inline';
+                break;
+
+            default:
+                one.style.display = 'inline';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'none';
+                break;
+        }
     })
 
     selectElement('#downBtn').addEventListener('click', () => {
         rotateSum = rotateValue + "rotate(+90deg)";
         circle.style.transform = rotateSum;
         rotateValue = rotateSum;
+        if (featureNum == 4) {
+            featureNum = 1;
+        } else {
+            featureNum++;
+        }
+        switch (featureNum) {
+            case 1:
+                one.style.display = 'inline';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'none';
+                break;
+            case 2:
+                one.style.display = 'none';
+                two.style.display = 'inline';
+                three.style.display = 'none';
+                four.style.display = 'none';
+                break;
+            case 3:
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'inline';
+                four.style.display = 'none';
+                break;
+            case 4:
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'inline';
+                break;
+
+            default:
+                one.style.display = 'inline';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'none';
+                break;
+        }
     })
 }
-
 
 
 for (var i = 0; i < iconBx.length; i++) {
