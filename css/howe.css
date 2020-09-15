@@ -201,12 +201,12 @@
     margin-top: -5rem;
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .process .container .icon{
     position: relative;
-    width: 50%;
+    width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -216,13 +216,11 @@
 
 .process .icon .iconBx{
     position: relative;
-    background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%), url("../images/FoxAutoServicesLogo.jpeg") center no-repeat;
-    background-size: contain;
-    width: calc(50% - 40px);
+    background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 1) 100%);
     margin: 2rem 1rem;
-    padding: 0 0;
-    height: 24rem;
-    width: 24rem;
+    padding: 0 .5rem;
+    height: 14rem;
+    width: 14rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -242,8 +240,8 @@
 }
 
 .process .icon .iconBx img{
-    max-width: 11rem;
-    filter: opacity(0.5);
+    max-width: 7rem;
+    filter: opacity(0.8);
     transition: 0.5s;
     transform: scale(0.8);
 }
@@ -251,7 +249,7 @@
 .process .icon .iconBx h3{
     color: #fafafa;
     opacity: 0.7;
-    font-size: 2.8rem;
+    font-size: 1.6rem;
     letter-spacing: 1.3px;
 }
 
@@ -262,16 +260,16 @@
 
 .process .content{
     position: relative;
-    float: right;
-    width: 50%;
+    width: 100%;
+    height: 50vh;
+    padding: 2rem 1rem;
 }
 
 .process .content .contentBx{
     position: absolute;
     width: 100%;
-    height: 100%;
     display: flex;
-    padding-bottom: 20rem;
+    padding-bottom: 1rem;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
@@ -287,7 +285,7 @@
 
 .process .content .contentBx h2{
     color: rgba(0, 0, 0, .7);
-    font-size: 3rem;
+    font-size: 2.6rem;
 }
 
 /* Media queries */
@@ -344,6 +342,77 @@
 }
 
 @media screen and (min-width: 700px){
+
+    .process .inner-container{
+        flex-direction: row;
+    }
+    
+    .process .container .icon{
+        position: relative;
+        width: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+    
+    .process .icon .iconBx{
+        position: relative;
+        background-size: contain;
+        width: calc(50% - 40px);
+        margin: 2rem 1rem;
+        padding: 0 0;
+        height: 24rem;
+        width: 24rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 14px;
+        transition: 0.5s;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .07);
+    }
+    
+    .process .icon .iconBx img{
+        max-width: 11rem;
+    }
+    
+    .process .icon .iconBx h3{
+        color: #fafafa;
+        opacity: 0.7;
+        font-size: 2.8rem;
+        letter-spacing: 1.3px;
+    }
+    
+    .process .icon .iconBx.active img{
+        filter: opacity(1);
+        transform: scale(1);
+    }
+    
+    .process .content{
+        position: relative;
+        float: right;
+        width: 50%;
+    }
+    
+    .process .content .contentBx{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding-bottom: 15rem;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        transform: scale(0);
+        opacity: 0;
+    }
+    
+    .process .content .contentBx h2{
+        font-size: 3rem;
+    }
     
 }
 
