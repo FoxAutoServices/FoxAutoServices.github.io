@@ -36,7 +36,7 @@
     height: auto;
     background: white;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
 }
 
 .service:nth-child(2n+2){
@@ -45,31 +45,31 @@
     height: auto;
     background: #fafafa;
     display: flex;
+    flex-direction: column-reverse;
 }
 
 .service .imgBx{
     position: sticky;
     top: 0;
+    padding: 10px 20px;
     min-width: 50%;
     height: auto;
 }
 
 .service .imgBx img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     max-width: 600px;
+    margin-bottom: 40px;
 }
 
 .service:nth-child(2n+1) .content{
-    padding: 100px 0px 100px 100px;
-    text-align: right;
+    padding: 0 20px;
+    text-align: justify;
 }
 
 .service:nth-child(2n+2) .content{
-    padding: 100px 100px 100px 0px;
-    text-align: left;
+    padding: 0 20px;
+    text-align: justify;
 }
 
 .service .content h2{
@@ -93,7 +93,30 @@
 
 
 @media screen and (min-width: 950px){
+    .service:nth-child(2n+1){
+        flex-direction: row-reverse;
+    }
     
+    .service:nth-child(2n+2){
+        flex-direction: row;
+    }
+
+    .service .imgBx img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .service:nth-child(2n+1) .content{
+        padding: 100px 0px 100px 100px;
+        text-align: right;
+    }
+    
+    .service:nth-child(2n+2) .content{
+        padding: 100px 100px 100px 0px;
+        text-align: left;
+    }
 }
 
 @media screen and (min-width: 1200px){
