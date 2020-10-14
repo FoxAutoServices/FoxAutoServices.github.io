@@ -209,7 +209,7 @@
 
 .adventure-grid{
     display: grid;
-    grid-auto-columns: 30%;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 2.5rem;
     margin-bottom: 2rem;
 }
