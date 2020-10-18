@@ -3,27 +3,44 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Itnovart Services | Business template</title>
+    <title>Fox Auto Service | Home</title>
     <!--Ion Icons-->
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Glide -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
     <!--Our own stylesheet-->
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="styles.css">
+    <!-- icon -->
+    <link rel="shortcut icon" href="fas.ico" type="image/x-icon">
 </head>
 
 <body>
+    <!-- Start preload -->
+    <div class="loading-overlay">
+        <div class="loader">
+            <div class="loader-div">
+            </div>
+        </div>
+    </div>
 
+    <!-- Navbar -->
     <header>
         <div class="container">
-            <nav>
+            <nav class="nav-container">
                 <div class="nav-brand">
                     <a href="index.html">
-                        <img src="images/logo.png" alt="Business name">
+                        <img src="images/fas_neonthorizontal.png" alt="Fox Auto Services">
                     </a>
                 </div>
 
@@ -39,16 +56,19 @@
                         <a href="#" class="nav-link current">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Destinations</a>
+                        <a href="pages/services.html" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Pricing</a>
+                        <a href="pages/gallery.html" class="nav-link">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Booking</a>
+                        <a href="pages/collision-repair.html" class="nav-link">Collision Repair</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
+                        <a href="pages/request-estimate.html" class="nav-link">Request an estimate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact us</a>
                     </li>
                 </ul>
             </nav>
@@ -56,105 +76,527 @@
     </header>
 
     <main>
-        <section class="hero">
+        <!-- FAB -->
+        <div class="fab-container">
+            <div class="main-fab fab-icon-holder">
+                <i class="icon ion-md-help"></i>
+            </div>
+            <ul class="fab-options">
+                <li>
+                    <span class="fab-label"> Request Estimate</span>
+                    <div class="fab-icon-holder">
+                        <a href="pages/request-estimate.html"><i class="icon ion-md-mail"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <span class="fab-label">Make Appointment</span>
+                    <div class="fab-icon-holder">
+                        <a href="#contact"><i class="icon ion-md-calendar"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <span class="fab-label">Get Directions</span>
+                    <div class="fab-icon-holder">
+                        <a target="_blank" href="https://www.google.com/maps/dir//'39.1764631,-76.6135502'/@39.1764631,-76.6157389,17z/data=!4m6!4m5!1m0!1m3!2m2!1d-76.6135502!2d39.1764631"><i class="icon ion-md-navigate"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
             <div class="container">
                 <div class="main-message">
-                    <h3>The great outdoor</h3>
-                    <h1>Adventure</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur nobis eveniet, quis a ratione
-                        sunt
-                        neque qui quos dolorum ipsam culpa non quasi cumque dolorem eius dolores sequi optio libero.Odio
-                        officia natus eos qui</p>
+                    <h3>Quality, Precision and Knowledge</h3>
+                    <h1 class="accent-text">FOX AUTO SERVICES</h1>
+                    <p>We stand by our core values which are to repair a vehicle with the best Quality guided by a Knowledgeable staff with the upmost Precision. At Fox Auto Services we do not leave anything to the luck or the maybe we make sure that everything is done right the first time</p>
                     <div class="cta">
-                        <a href="#" class="btn">Book Now</a>
+                        <a href="#about" class="btn">About us</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Experiences outdoor -->
-        <section class="experience-outdoors">
+        <!-- Begin Adventure section -->
+        <section class="begin-adventure" class="about">
             <div class="container">
-                <div class="title-heading">
-                    <h3>Experience</h3>
-                    <h1>The thrilling outdoors</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="title-heading animate-top">
+                    <h3>our service</h3>
+                    <h1>and commitment</h1>
                 </div>
-
-                <div class="activities-grid">
-                    <!-- Grid item #1 -->
-                    <div class="activities-grid-item star-gazing">
-                        <i class="icon ion-md-star"></i>
-                        <h1>Star Gazing</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptatibus, debitis
-                            deleniti impedit magni officia iure amet, sed dolorem incidunt quis natus ipsa numquam rem
-                            recusandae, veniam odit hic nihil.</p>
-                    </div>
-                    <!-- Grid item #2 -->
-                    <div class="activities-grid-item hiking">
-                        <i class="icon ion-md-compass"></i>
-                        <h1>Hiking</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptatibus, debitis
-                            deleniti impedit magni officia iure amet, sed dolorem incidunt quis natus ipsa numquam rem
-                            recusandae, veniam odit hic nihil.</p>
-                    </div>
-                    <!-- Grid item #3 -->
-                    <div class="activities-grid-item camping">
-                        <i class="icon ion-md-bonfire"></i>
-                        <h1>Camping</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptatibus, debitis
-                            deleniti impedit magni officia iure amet, sed dolorem incidunt quis natus ipsa numquam rem
-                            recusandae, veniam odit hic nihil.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonials">
-            <div class="container">
-                <div class="testimonial">
-                    <div class="testimonial-text-box">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem adipisci possimus corrupti
-                            dignissimos voluptatem tempora reprehenderit.</p>
-                        <i class="icon ion-md-quote"></i>
-                    </div>
-                    <div class="testimonial-customer">
-                        <img src="images/profile-pic.jpg" alt="Customers review">
-                        <h1>Martin G.</h1>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="begin-adventure">
-            <div class="container">
-                <div class="title-heading">
-                    <h3>Let the</h3>
-                    <h1>Adventure begin</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="adventure-grid">
+                <div class="adventure-grid animate-top">
                     <!-- Adventure grid item #1 -->
                     <div class="adventure-grid-item">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, autem optio doloribus
-                            voluptatibus earum eos ad, omnis quae repellendus neque nemo placeat </p>
+                        <p>With services including auto body repair, painting, glass, wheel and dent repair we proud ourselves to say that all our work is backed by a written lifetime warranty and completed with high-quality craftsmanship and customer care. Customer satisfaction is important to our team, and we are positive you will be satisfied with the results.  </p>
                     </div>
                     <!-- Adventure grid item #2 -->
                     <div class="adventure-grid-item">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, autem optio doloribus
-                            voluptatibus earum eos ad, omnis quae repellendus neque nemo placeat </p>
+                        <p>During the collision repair process, we will provide you regular updates on your vehicle’s status, so you are informed as we return it back to pre-accident condition. No job is too large or small for our Fox Auto Service team to handle. </p>
+                    </div>
+                </div><!-- Adventure grid item #2 -->
+                <div class="adventure-full-grid-item animate-bottom">
+                    <p>Conveniently located, we are ideal for anyone in Howard County and the surrounding areas. We are equipped to serve military, families, dealerships and business fleets, and our is certified in repairs through I-CAR. As an added convenience, we have a partnership with Enterprise to offer the best rated and availability in the rental process.</p>
+                </div>
+                <div class="cta center">
+                    <a href="#" class="btn">more about us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- How We do it section -->
+        <section class="how-we-do-it" id="howe">
+            <div class="container">
+                <div class="title-heading animate-top">
+                    <h1>how We do it</h1>
+                    <p>Get to know each part of the process. </p>
+                </div>
+                <div class="how-we-do-it-grid">
+                    <!-- Adventure grid item #1 -->
+                    <div class="how-we-do-it-text animate-left">
+                        <div class="info-item">
+                            <img src="images/icons/one.png" alt="First Step" class="number-image">
+                            <p><strong>Estimate</strong><br>If you’ve been in an accident, or your vehicle has damage that you need repaired, first contact the responsible insurance company to establish your claim. Then, simply contact <strong>Fox Auto Services</strong> to schedule an estimate appointment.</p>
+                        </div>
+                        <div class="info-item">
+                            <img src="images/icons/two.png" alt="First Step" class="number-image">
+                            <p><strong>Vehicule Drop Off</strong><br>Deliver your vehicle to <strong>Fox Auto Services</strong> on your assigned drop date so we can begin the auto body repair process.</p>
+                        </div>
+                        <div class="info-item">
+                            <img src="images/icons/three.png" alt="First Step" class="number-image">
+                            <p><strong>Body Repair</strong><br>Once we receive your vehicule for repairs, we begin by investigating any additional damage thah maybe hidden. If we discover additional damage, we will notify both the insurance company and the customer.</p>
+                        </div>
+                    </div>
+                    <!-- Adventure grid item #2 -->
+                    <div class="how-we-do-it-image animate-right">
+                        <img src="images/car.png" alt="">
                     </div>
                 </div>
-                <a class="btn" href="#">Book your adventure</a>
+                <div class="cta animate-bottom">
+                    <a href="pages/how-we-do-it.html" class="btn">Review whole process</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="experience-outdoors" id="services">
+            <div class="container">
+                <div class="title-heading animate-bottom">
+                    <h3>Discover</h3>
+                    <h1>Our services</h1>
+                    <p>All our work is done by knowledgeable and specialized staff. </p>
+                </div>
+
+                <div class="activities-grid center">
+                    <!-- Grid item #1 -->
+                    <div class="activities-grid-item auto-glass animate-left">
+                        <i class="icon ion-md-settings"></i>
+                        <h1>Auto Glass</h1>
+                        <p>We proud ourselves to say that we offer lifetime warranty on all our glass installations from leaks and misplacements. We provide Mobile Glass replacements with and without calibrations.
+                            </p>
+                    </div>
+                    <!-- Grid item #2 -->
+                    <div class="activities-grid-item collision-repair animate-bottom">
+                        <i class="icon ion-md-brush"></i>
+                        <h1>Collission Repair</h1>
+                        <p>We provide lifetime warranty on all the repairs that are completed at our facilities, regardless of the repairs being handled under an Insurance company or out of pocket expense. 
+                        <br><br><strong>Free estimates with $50 Scan diagnostics and assessment.</strong></p>
+                    </div>
+                    <!-- Grid item #3 -->
+                    <div class="activities-grid-item detail-service animate-right">
+                        <i class="icon ion-md-hand"></i>
+                        <h1>Detail Service</h1>
+                        <p>We offer multiple packages for all type of cleaning from the regular wash to our Premium Detailing services.</p>
+                    </div>
+                    
+                    <!-- Grid item #2 -->
+                    <div class="activities-grid-item refinishing-service animate-left">
+                        <i class="icon ion-md-brush"></i>
+                        <h1>Refinishing</h1>
+                        <p>Our refinishing services count with a lifetime limited warranty. As long as you own your vehicle we will warranty any refinishing done to your vehicle.
+                            We have multiple offers from a full refinish in a panel for $400 including minor repairs, which are still subject to inspection by our professionals.
+                            </p>
+                    </div>
+                    <!-- Grid item #3 -->
+                    <div class="activities-grid-item wheel-repair animate-bottom">
+                        <i class="icon ion-md-hand"></i>
+                        <h1>Wheel Repair</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptatibus, debitis
+                            deleniti impedit magni officia iure amet, sed dolorem incidunt quis natus ipsa numquam rem
+                            recusandae, veniam odit hic nihil.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials section -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="testimonial animate-top">
+                    <div class="testimonial-text-box">
+                        <p>Great customer service but more importantly they take great care towards your vehicle. Got a complete exhaust exchange and came out great!! Definitely you should check them out</p>
+                        <i class="icon ion-md-quote"></i>
+                    </div>
+                    <div class="testimonial-customer">
+                        <img src="images/profile-pic.png" alt="Customers review">
+                        <h1>Hector Z.</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing section -->
+        <section class="price" id="pricing">
+            <div class="container">
+                <div class="title-heading animate-top">
+                    <h3>Dealer</h3>
+                    <h1>Prices</h1>
+                </div>
+
+                <div class="glide animate-right">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="price-table">
+                                    <div class="price-head">
+                                        <h4>Basic Detail</h4>
+                                        <h2>$80*</h2>
+                                    </div>
+                                    <div class="price-content">
+                                        <ul>
+                                            <li>Shampoo full vehicule with warm water</li>
+                                            <li>Wheel cleaning w/o removal</li>
+                                            <li>Door Time & dashboard wipe down with microfiber towel</li>
+                                            <li>Tire Dressing</li>
+                                            <li>Dry with chamoise</li>
+                                            <li>Aromatization</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-btn">
+                                        <button class="btn btn-primary">Make appointment</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="price-table">
+                                    <div class="price-head">
+                                        <h4>Advance Detail</h4>
+                                        <h2>$175*</h2>
+                                    </div>
+                                    <div class="price-content">
+                                        <ul>
+                                            <li>Foam full vehicle</li>
+                                            <li>Power wash jambs, undercarriage and wheels</li>
+                                            <li>Vacuum seats, floor & trunk area</li>
+                                            <li>Desinfect with approved products for COVID-19</li>
+                                            <li>Tire Dressing</li>
+                                            <li>Windex w/RainX</li>
+                                            <li>Exterior Foam Wax</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-btn">
+                                        <button class="btn btn-primary">Make appointment</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="price-table">
+                                    <div class="price-head">
+                                        <h4>Enhaced Detail</h4>
+                                        <h2>$260*</h2>
+                                    </div>
+                                    <div class="price-content">
+                                        <ul>
+                                            <li>Advance package +</li>
+                                            <li>Headliner Cleaning</li>
+                                            <li>Cup Holder & Door trim cleaning</li>
+                                            <li>Wet Vacuum Seats</li>
+                                            <li>Light scratches polished</li>
+                                            <li>Vent Detailing</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-btn">
+                                        <button class="btn btn-primary">Make appointment</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="price-table">
+                                    <div class="price-head">
+                                        <h4>Premium plus Detail</h4>
+                                        <h2>$400*</h2>
+                                    </div>
+                                    <div class="price-content">
+                                        <ul>
+                                            <li>Enhanced package +</li>
+                                            <li>Seat Removal</li>
+                                            <li>Full floor cleaning</li>
+                                            <li>Revitalizing Interior Trims</li>
+                                            <li>Sanding on minor scrapes and polishing</li>
+                                            <li>Tire Check</li>
+                                            <li>Air Filter Check and aromatization</li>
+                                            <li>Headlight Restoration</li>
+                                            <li>Wheel Removal for cleaning</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-btn">
+                                        <button class="btn btn-primary">Make appointment</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="price-table">
+                                    <div class="price-head">
+                                        <h4>Panel repairs</h4>
+                                        <h2>$400* per panel</h2>
+                                    </div>
+                                    <div class="price-content">
+                                        <ul>
+                                            <li>Minor Body Work repair</li>
+                                            <li>Refinish single panel</li>
+                                            <li>$70 Blend</li>
+                                            <li>Full panel trim out</li>
+                                            <li>Limited Lifetime Warranty</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-btn">
+                                        <button class="btn btn-primary">Make appointment</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="price-table">
+                                    <div class="price-head">
+                                        <h4>Headlight Restoration</h4>
+                                        <h2>$150*</h2>
+                                    </div>
+                                    <div class="price-content">
+                                        <ul>
+                                            <li>Wet stand component</li>
+                                            <li>3 Step polish components</li>
+                                            <li>Revitalization wax</li>
+                                            <li>Limited Lifetime warranty</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-btn">
+                                        <button class="btn btn-primary">Make appointment</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="price-table">
+                                    <div class="price-head">
+                                        <h4>Color change on wheel below 20"</h4>
+                                        <h2>$100*</h2>
+                                    </div>
+                                    <div class="price-content">
+                                        <ul>
+                                            <li>Sand down wheel</li>
+                                            <li>Color adjustment</li>
+                                            <li>Full Primed Surface</li>
+                                            <li>Off car refinishing</li>
+                                            <li>Limited Lifetime warranty</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-btn">
+                                        <button class="btn btn-primary">Make appointment</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                                class="fa fa-angle-left"></i></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                                class="fa fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start of Social Contact -->
+        <section class="follow-work between">
+            <div class="container">
+                <div class="title-heading col-lg-5 animate-left">
+                    <h3>Review us</h3>
+                    <h1 class="accent-text">on social media</h1>
+                    <p>Read what people is saying about us on the most popular social media platforms.</p>
+                </div>
+
+                <div class="social-contact col-lg-7 animate-right">
+                    <a target="_blank" href="https://www.yelp.com/biz/fox-auto-services-glen-burnie?osq=fox+Auto+Service">
+                        <div class="social-contact-icon">
+                            <img src="images/yelp.png" alt="Review us on yelp">
+                            <h2 class="icon-name">YELP</h2>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/TheFOXAuto">
+                        <div class="social-contact-icon">
+                            <img src="images/facebook.png" alt="Diamond Auto Body & Service Center on Facebook">
+                            <h2 class="icon-name">Facebook</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Begin Adventure section -->
+        <section class="begin-adventure">
+            <div class="container">
+                <div class="title-heading animate-bottom">
+                    <h3>Why</h3>
+                    <h1>choosing us</h1>
+                </div>
+                <div class="adventure-grid animate-bottom">
+                    <!-- Adventure grid item #1 -->
+                    <div class="adventure-grid-item">
+                        <p>The technical complexities of today’s vehicles makes it more critical than ever to choose a body shop wisely. We take pride in our highly trained technicians who use the latest tools and equipment to deliver a top-quality repair and provide the very best in customer service.
+                        </p><br>
+                        <p><strong>THIS IS THE FOX WAY!! </strong></p>
+                    </div>
+                    <!-- Adventure grid item #2 -->
+                    <div class="adventure-grid-item">
+                        <p>Newer vehicles are manufactured with durable, lightweight materials and advanced technology, which means that a repair performed in accordance with the manufacturer's specifications is more important than ever and ensures the safety and proper performance of the vehicle. Consumers need the confidence and peace of mind to know their vehicle is being repaired by a shop that has what it takes to ensure vehicle safety. We have committed to make sure consumers can have their vehicle repaired the proper and safer way wherever they live, work, or travel." </p>
+                    </div>
+                </div>
+                <div class="cta">
+                    <a href="pages/request-estimate.html" class="btn">Request Estimate</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="content">
+                    <div class="title-heading animate-bottom">
+                        <h1 class="accent-text">Contact Us</h1>
+                        <p>Conveniently located, we are ideal for anyone in Howard County and the surrounding areas. We are equipped to serve military, families, dealerships and business fleets, and our is certified in repairs through I-CAR. As an added convenience, we have a partnership with Enterprise to offer the best rated and availability in the rental process. </p>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <div class="contactInfo animate-left">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="icon ion-md-map"></i></div>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p>129 Roesler Rd, Bldg A<br>Glen Burnie, MD<br>21060</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="icon ion-md-call"></i></div>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p>410 304 3109</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="icon ion-md-mail"></i></div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>info@foxautoservices.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactForm animate-right">
+                        <form action="submit">
+                            <h2>Send Message</h2>
+                            <div class="inputBox">
+                                <input type="text" name="fullName" required="required">
+                                <span>Full Name</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="text" name="email" required="required">
+                                <span>Email</span>
+                            </div>
+                            <div class="inputBox">
+                                <textarea required="required"></textarea>
+                                <span>Type your message...</span>
+                            </div>
+                            <div class="inputBox">
+                                <input class="btn" type="submit" value="send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2020 Itnovart Services. All rights reserved</p>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#hero"> <i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-content-about title-heading">
+                    <h1>Fox Auto Services</h1>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i>
+                    </div>
+                    <p>
+                        Address information<br>(410) 304-6541 <br>info@foxautoservices.com
+                    </p>
+                </div>
+                <div class="footer-content-divider">
+                    <div class="social-media">
+                        <h4>Follow along</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a target="_blank" href="https://www.yelp.com/biz/fox-auto-services-glen-burnie?osq=fox+Auto+Service"><i class="fab fa-yelp"> Yelp</i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/TheFOXAuto"><i class="fab fa-facebook-square"> Facebook</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script type="text/javascript" src="scripts.js"></script>
+    <!-- Jquery -->
+    <script src="js/jquey-3.4.1.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Glide -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.js"></script>
+    <!-- Scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- My Scripts -->
+    <script src="scripts.js"></script>
+    <script>
+        $(window).on("load", function () {
+            $(" .loading-overlay .loader").fadeOut(850, function () {
+                $("body").css("overflow", "auto");
+                $(this).parent().fadeOut(450,
+                    function () {
+                        $(this).remove();
+                    });
+            });
+        });
+    </script>
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            autoplay: 2000,
+            startAt: 0,
+            perView: 3,
+            focusAt: 'center',
+            breakpoints: {
+                950: {
+                    perView: 2,
+                },
+                570: {
+                    perView: 1
+                }
+            }
+        }).mount();
+    </script>
 </body>
 
 </html>
