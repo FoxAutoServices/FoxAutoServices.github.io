@@ -121,18 +121,28 @@
     z-index: -1;
 }
 
-.star-gazing{
-    background: url("images/mechanical-service.jpg") center no-repeat;
+.auto-glass{
+    background: url("images/glass-repair.jpg") center no-repeat;
     background-size: cover;
 }
 
-.hiking{
+.collision-repair{
+    background: url("images/collision-repair.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.detail-service{
     background: url("images/detailing-service.png") center no-repeat;
     background-size: cover;
 }
 
-.camping{
+.refinishing-service{
     background: url("images/pdr-service.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.wheel-repair{
+    background: url("images/wheel-repair.jpg") center no-repeat;
     background-size: cover;
 }
 
@@ -218,6 +228,10 @@
     color: rgba(0, 0, 0, .7);
 }
 
+.adventure-full-grid-item p{
+    color: rgba(0, 0, 0, .7);
+}
+
 /* Start price */
 .price{
     padding: 5rem 0;
@@ -234,7 +248,7 @@
     box-shadow: 0 0 12px rgba(0,0,0,.2);
     border-radius: 20px;
     color:#333;
-    min-height: 42rem;
+    min-height: 60rem;
     margin: 1.5rem 1rem;
     transition: all 350ms ease-in;
 }
@@ -244,7 +258,7 @@
 }
 
 .price .price-table .price-head{
-    padding: 40px;
+    padding: 25px 40px;
     background: linear-gradient(135deg, rgba(20, 67, 168, 0.9) 0%, rgba(49, 80, 116, 0.9) 100%);
     color: #fafafa;
     border-bottom-left-radius: 30%;
@@ -268,7 +282,7 @@
 .price .price-table .price-content ul{
     position: relative;
     padding: 1rem 3rem;
-    margin: 1.5rem auto;
+    margin: 1rem auto;
 }
 
 .price .price-table .price-content ul li{
