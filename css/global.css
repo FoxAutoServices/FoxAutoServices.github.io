@@ -185,10 +185,19 @@ section{
 header{
     width: 100%;
     height: 5rem;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 10000;
+}
+
+.nav-container{
+    position: absolute;
+    left: 0;
+    padding-right: 2.5rem;
+    padding-left: 2rem;
+    width: 100vw;
+    background: linear-gradient(135deg, rgba(34, 62, 122, .5) 0%, rgba(35, 57, 82, .7) 100%);
 }
 
 .container{
@@ -605,6 +614,13 @@ footer {
         height: 8rem;
     }
 
+    .nav-container{
+        position: absolute;
+        left: 0;
+        padding-left: 9rem;
+        padding-right: 9rem;
+    }
+
     .nav-brand{
         width: 20rem;
     }
@@ -632,7 +648,7 @@ footer {
     .current{
         color: #fafafa;
         position: relative;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         transition: color 650ms;
     }
 
