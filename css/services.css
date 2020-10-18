@@ -85,6 +85,43 @@
     color: #777;
 }
 
+.seven-reasons{
+    color: rgba(0, 0, 0, .7);
+    margin-top: -4rem;
+    margin-bottom: 8rem;
+}
+
+.seven-reasons h1{
+    font-family: 'Aldrich', sans-serif;
+    text-transform: uppercase;
+    font-size: 3.0rem;
+    margin: .5rem 0 1rem;
+    text-align: center;
+}
+
+.reasons-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.reasons-list li {
+    margin: 10px auto;
+}
+.reasons-list li i{
+    font-size: 1.5rem;
+    margin: auto 1rem;
+    color: #ec8c0d;
+}
+
+.reason{
+    font-size: 2.5rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
 /* Media queries */
 
 @media screen and (min-width: 700px){
