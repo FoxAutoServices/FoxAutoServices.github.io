@@ -20,6 +20,10 @@
     position: relative;
 }
 
+.main-message{
+    transform: translateY(40%);
+}
+
 /* Services Styles */
 
 .services .container{

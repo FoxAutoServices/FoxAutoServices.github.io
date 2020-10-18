@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fox Auto Service | Home</title>
     <!--Ion Icons-->
@@ -138,7 +137,6 @@
                 <div class="adventure-full-grid-item animate-bottom">
                     <p>Conveniently located, we are ideal for anyone in Howard County and the surrounding areas. We are equipped to serve military, families, dealerships and business fleets, and our is certified in repairs through I-CAR. As an added convenience, we have a partnership with Enterprise to offer the best rated and availability in the rental process.</p>
                 </div>
-                </div>
                 <div class="cta center">
                     <a href="#" class="btn">more about us</a>
                 </div>
@@ -225,6 +223,7 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptatibus, debitis
                             deleniti impedit magni officia iure amet, sed dolorem incidunt quis natus ipsa numquam rem
                             recusandae, veniam odit hic nihil.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -503,14 +502,14 @@
                         </div>
                     </div>
                     <div class="contactForm animate-right">
-                        <form action="">
+                        <form action="submit">
                             <h2>Send Message</h2>
                             <div class="inputBox">
-                                <input type="text" name="" required="required">
+                                <input type="text" name="fullName" required="required">
                                 <span>Full Name</span>
                             </div>
                             <div class="inputBox">
-                                <input type="text" name="" required="required">
+                                <input type="text" name="email" required="required">
                                 <span>Email</span>
                             </div>
                             <div class="inputBox">
@@ -569,8 +568,8 @@
     <!-- Scrollreveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- My Scripts -->
-    <script type="text/javascript" src="scripts.js"></script>
-    <script type="text/javascript">
+    <script src="scripts.js"></script>
+    <script>
         $(window).on("load", function () {
             $(" .loading-overlay .loader").fadeOut(850, function () {
                 $("body").css("overflow", "auto");
